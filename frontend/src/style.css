@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap');
+
+:root {
+  color: #17332d;
+  background: #f6f3ec;
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 32px;
+}
+
+.brand {
+  color: #17332d;
+  font-family: 'Fraunces', serif;
+  font-size: 1.55rem;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  color: #50625d;
+  font-size: 0.92rem;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 88px 32px 56px;
+  border-radius: 32px;
+  background:
+    linear-gradient(90deg, rgba(13, 46, 39, 0.9), rgba(13, 46, 39, 0.35)),
+    url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1800&q=85') center/cover;
+}
+
+.hero-copy {
+  max-width: 680px;
+  color: white;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #d79d5b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+}
+
+h1 {
+  max-width: 640px;
+  margin-bottom: 18px;
+  font-size: clamp(2.5rem, 5.5vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+
+.hero-copy > p:last-child {
+  max-width: 570px;
+  color: #e7efec;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.search-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1px;
+  margin-top: 48px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #d7dedb;
+  box-shadow: 0 18px 45px rgba(5, 25, 21, 0.22);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 15px 17px;
+  background: white;
+}
+
+.field span {
+  color: #6b7d77;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.field input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #17332d;
+  background: transparent;
+}
+
+.search-button {
+  min-width: 150px;
+  padding: 0 32px;
+  border: 0;
+  color: white;
+  background: #d66f3d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #bd5930;
+}
+
+.results {
+  max-width: 1240px;
+  min-height: 260px;
+  margin: 0 auto;
+  padding: 72px 32px;
+}
+
+.results-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.results-heading h2,
+.status-card h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e2ded4;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(32, 53, 46, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead {
+  color: #61716c;
+  background: #f0eee7;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #e9e5dc;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody th {
+  color: #17332d;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+}
+
+tbody td {
+  color: #53655f;
+}
+
+.available {
+  color: #26735c;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.unavailable {
+  color: #9a4e36;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.status-card,
+.intro-card {
+  padding: 42px;
+  border: 1px solid #e2ded4;
+  border-radius: 20px;
+  background: white;
+  text-align: center;
+}
+
+.status-card p,
+.intro-card p {
+  margin-bottom: 0;
+  color: #61716c;
+}
+
+.error-state {
+  border-color: #e9bca8;
+}
+
+footer {
+  padding: 30px 32px;
+  color: #77827e;
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 1050px) {
+  .search-button {
+    min-height: 62px;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    padding: 20px;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 20px 24px;
+    border-radius: 0;
+  }
+
+  .search-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .results {
+    padding: 48px 20px;
+  }
+
+  th,
+  td {
+    padding: 14px 16px;
+  }
+}

@@ -1,0 +1,1 @@
+"""Hotel search backend application."""
