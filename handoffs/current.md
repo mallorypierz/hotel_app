@@ -2,7 +2,7 @@
 
 ## Current Objective
 
-Part 1 city search is implemented, reviewed, committed, and pushed. Vue sends a city query to FastAPI; Python joins `data/hotels.csv` and `data/trips.csv` through `hotel_id`; Vue displays the joined trips in a labeled table.
+Part 1 city search is implemented, reviewed, committed, and pushed. The ordered startup workflow is documented, verified, and saved in a separate context checkpoint.
 
 ## What Works
 
@@ -22,7 +22,14 @@ Part 1 city search is implemented, reviewed, committed, and pushed. Vue sends a 
 - Browser check:
   - Boston expected four joined rows; four rows were observed.
   - Aspen expected the no-results state; the message was observed.
-  - A fresh browser tab reported no console warnings or errors.
+- A fresh browser tab reported no console warnings or errors.
+- Startup stages:
+  - Git root, branch, HEAD, status, and architecture boundaries were confirmed.
+  - Python 3.12.5 and backend imports passed; `pip check` found no broken requirements.
+  - SQLite 3.45.3 persisted a row across close/reopen; the temporary database was removed.
+  - Node 24.20.0, npm 11.19.0, and all declared frontend packages were confirmed.
+  - `hotels.csv` and `bookings.csv` were opened in VS Code and their headers and sample records were inspected.
+  - `AGENTS.md` was placed beside `hotels.csv`; `start-up-prompts.md` source and rendered preview were opened side by side.
 
 ## Runtime
 
@@ -36,10 +43,10 @@ Part 1 city search is implemented, reviewed, committed, and pushed. Vue sends a 
 - Branch: `main`, tracking `origin/main`.
 - Part 1 feature commit: `c9eaf9117e104d36be5d50fbfc94697c5791399b` (`Add Part 1 city hotel search`).
 - Remote: `https://github.com/mallorypierz/hotel_app.git`.
-- The working tree was clean after the Part 1 push. Generated environments and build output are ignored.
+- The working tree should be clean after the startup context checkpoint. Generated environments and build output are ignored.
 - The user approved the checkpoint after reviewing the Part 1 state.
 - Mobile layout, hotel details, room selection, booking, and confirmation remain unverified or unimplemented.
 
 ## Next Task
 
-Choose the next product feature before editing. Continue to keep application changes in focused, verified commits.
+Choose the next product feature before editing. Continue to keep application and context changes in focused, verified commits.

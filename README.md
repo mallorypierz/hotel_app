@@ -13,6 +13,8 @@ A small educational hotel-search application with a Vue frontend and Python/Fast
 
 `GET /api/hotels?city=Boston` returns matching joined hotel and trip records. Vue displays them in a labeled table and shows a clear message when no city matches.
 
+Run the reusable preparation and verification stages in `prompts/start-up-prompts.md` when setting up or resuming the project.
+
 ## Setup
 
 From the `hotel_app/` project root, create the backend environment and install its declared packages:

@@ -40,7 +40,8 @@ hotel_app/
     ├── 05-booking-history.md        # Booking history feature
     ├── 06-version-recover-share.md  # Git milestone workflow
     ├── 07-durable-context.md        # Context refresh workflow
-    └── 08-part-1-city-search.md     # Submitted Part 1 requirements
+    ├── 08-part-1-city-search.md     # Submitted Part 1 requirements
+    └── start-up-prompts.md          # Ordered preparation and verification stages
 ```
 
 Local generated directories such as `backend/.venv/`, `frontend/node_modules/`, and `frontend/dist/` are omitted from the map.
