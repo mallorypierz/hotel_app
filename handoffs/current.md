@@ -2,7 +2,7 @@
 
 ## Current Objective
 
-Part 1 city search is implemented and reviewed for the initial checkpoint. Vue sends a city query to FastAPI; Python joins `data/hotels.csv` and `data/trips.csv` through `hotel_id`; Vue displays the joined trips in a labeled table.
+Part 1 city search is implemented, reviewed, committed, and pushed. Vue sends a city query to FastAPI; Python joins `data/hotels.csv` and `data/trips.csv` through `hotel_id`; Vue displays the joined trips in a labeled table.
 
 ## What Works
 
@@ -33,14 +33,13 @@ Part 1 city search is implemented and reviewed for the initial checkpoint. Vue s
 
 ## Git State and Limitations
 
-- Branch: `main`.
-- The reviewed Part 1 checkpoint is the current `HEAD` commit; use `git rev-parse HEAD` for its exact identifier.
-- The working tree should be clean after the checkpoint. Generated environments and build output are ignored.
+- Branch: `main`, tracking `origin/main`.
+- Part 1 feature commit: `c9eaf9117e104d36be5d50fbfc94697c5791399b` (`Add Part 1 city hotel search`).
+- Remote: `https://github.com/mallorypierz/hotel_app.git`.
+- The working tree was clean after the Part 1 push. Generated environments and build output are ignored.
 - The user approved the checkpoint after reviewing the Part 1 state.
-- No remote or upstream exists.
-- No GitHub push is possible until the intended repository URL is supplied.
 - Mobile layout, hotel details, room selection, booking, and confirmation remain unverified or unimplemented.
 
 ## Next Task
 
-Add and push `main` to `origin` only after the GitHub repository URL is supplied. The next product feature should be chosen before editing.
+Choose the next product feature before editing. Continue to keep application changes in focused, verified commits.
