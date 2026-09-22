@@ -14,8 +14,10 @@ Part 1: `c9eaf9117e104d36be5d50fbfc94697c5791399b`. Repository: https://github.c
 
 ## Remaining user work
 
-Record an under-three-minute Part 2 video, add its accessible link to report.md, and upload the report to the course submission page. Earlier local videos are preserved but are not submitted as Part 2 evidence. Verify instructor repository/video access. The full Activity 2 worksheet was not supplied. Authentication and surge pricing are optional and excluded. The app uses fixed classroom stays and makes no real reservations.
+The student supplied a 90.833-second recording, saved as `docs/part2-student-demo.mov` and linked in report.md. Upload the updated report to the course submission page. Earlier local videos are preserved but are not submitted as Part 2 evidence. Verify instructor repository/video access. The full Activity 2 worksheet was not supplied. Authentication and surge pricing are optional and excluded. The app uses fixed classroom stays and makes no real reservations.
 
 ## Publication
 
 The user explicitly approved committing and publishing the application, tests, report, documentation, and screenshots to the existing GitHub repository. The final report and review notes form a documentation-only checkpoint after the verified application merge. Earlier unused screenshots and videos remain local and are not submission evidence.
+
+The supplied video is unchanged (49,007,737 bytes). Duration was checked from the MOV metadata; its full visual/audio content was not reviewed in this upload step.

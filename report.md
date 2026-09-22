@@ -36,7 +36,7 @@ Reviewed the complete Git diff and new source files; visually inspected the cont
 
 ## Demo video
 
-**To be added by the student:** an accessible link to the under-three-minute Part 2 video. Show search, demo traveler selection, creation/history, cancellation, deletion of a separate test booking, and persisted history. Video creation is intentionally reserved for the student. Earlier search-only videos are not presented as Part 2 evidence.
+[Watch or download my Part 2 demo video](https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-student-demo.mov). The student-recorded video is approximately 1 minute 31 seconds, below the three-minute limit. If GitHub does not show an inline player, use **View raw** or **Download raw file** to download and play the recording.
 
 ## Project context and next steps
 
@@ -47,6 +47,6 @@ Reviewed the complete Git diff and new source files; visually inspected the cont
 - [Visual redesign prompt](https://github.com/mallorypierz/hotel_app/blob/main/prompts/04-visual-redesign.md)
 - [Current handoff](https://github.com/mallorypierz/hotel_app/blob/main/handoffs/current.md)
 
-Next: record the video, add its link above, verify instructor access to the repository and video, then upload this report to Part 2 — Submission. The course site submission is not performed by this application.
+Next: verify instructor access to the repository and linked video, then upload this report to Part 2 — Submission. The course site submission is not performed by this application.
 
 Limitations: local sample data and simulated reservations only; fixed classroom dates may be past dates. External fonts/hero image require internet. Other browsers, physical phones, and a full assistive-technology audit were not tested. The overview references In-class Activity 2 but its complete worksheet was not supplied, so any additional worksheet-specific deliverables are unverified.
