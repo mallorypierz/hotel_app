@@ -1,4 +1,5 @@
 <script setup>
+defineEmits(['book'])
 defineProps({
   hotels: {
     type: Array,
@@ -8,7 +9,15 @@ defineProps({
 </script>
 
 <template>
-  <div class="table-wrap">
+  <p class="table-hint">
+    Scroll the table sideways on smaller screens to see all columns and select a stay.
+  </p>
+  <div
+    class="table-wrap"
+    role="region"
+    aria-label="Available stays; scroll horizontally for booking actions"
+    tabindex="0"
+  >
     <table>
       <thead>
         <tr>
@@ -33,6 +42,9 @@ defineProps({
           <th scope="col">
             Check out
           </th>
+          <th scope="col">
+            Book a stay
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -49,6 +61,14 @@ defineProps({
           <td>{{ hotel.trip_name }}</td>
           <td>{{ hotel.check_in }}</td>
           <td>{{ hotel.check_out }}</td>
+          <td>
+            <button
+              type="button"
+              @click="$emit('book', hotel)"
+            >
+              Select stay
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>

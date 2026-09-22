@@ -1,3 +1,4 @@
+from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 
@@ -31,3 +32,33 @@ class CitySearchQuery(BaseModel):
 class HotelSearchResponse(BaseModel):
     hotels: list[HotelStay]
     count: int
+
+
+class BookingCreate(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    user_id: str = Field(min_length=1, max_length=80)
+    trip_id: str = Field(min_length=1, max_length=80)
+
+
+class Booking(BaseModel):
+    booking_id: str
+    user_id: str
+    trip_id: str
+    booked_on: str
+    status: Literal['confirmed', 'cancelled']
+
+
+class DemoUser(BaseModel):
+    user_id: str
+    display_name: str
+
+
+class BookingHistory(Booking):
+    display_name: str
+    hotel_name: str
+    city: str
+    state: str
+    nightly_rate_usd: float
+    trip_name: str
+    check_in: str
+    check_out: str

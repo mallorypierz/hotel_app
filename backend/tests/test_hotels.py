@@ -4,10 +4,17 @@ from pydantic import ValidationError
 from backend.app.main import app, get_hotels
 from backend.app.models import CitySearchQuery
 from backend.app.repository import HOTELS_FILE, TRIPS_FILE
+from backend.app import database
+
+
+@pytest.fixture(autouse=True)
+def sample_database(tmp_path, monkeypatch):
+    monkeypatch.setattr(database, 'DATABASE', tmp_path / 'test.sqlite3')
+    database.initialize()
 
 
 def test_search_returns_matching_hotel():
-    response = get_hotels(CitySearchQuery(city="Boston"))
+    response = get_hotels(city="Boston")
 
     assert response.count == 4
     assert response.hotels[0].name == "Harbor Lantern Hotel"
@@ -16,7 +23,7 @@ def test_search_returns_matching_hotel():
 
 
 def test_search_returns_empty_result():
-    response = get_hotels(CitySearchQuery(city="Aspen"))
+    response = get_hotels(city="Aspen")
 
     assert response.count == 0
     assert response.hotels == []

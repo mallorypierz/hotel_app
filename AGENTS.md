@@ -11,13 +11,21 @@ Work only inside this project. Read the repository and current handoff before ed
 - Update `README.md` when setup, architecture, or run instructions change.
 - Use sample data only. Do not add authentication, payments, real booking APIs, or unnecessary database complexity unless requested.
 
-## Current Part 1 Contract
+## Preserved Part 1 Checkpoint
 
 - Provide one city input and a Search button.
 - Return matching stays from `GET /api/hotels?city=...`.
 - Python must read `hotels.csv` and `trips.csv` and join them through `hotel_id`.
 - Vue must show results in a plain table with clear column labels.
 - Show a clear message when no city matches.
+
+## Approved Part 2 Contract
+
+- Preserve the Part 1 Git checkpoint; the current application searches hotel names and cities.
+- Seed SQLite once from all four supplied CSVs, preserving IDs and relationships. All later application reads and writes use SQLite.
+- Vue must provide demo traveler selection and booking create, read/history, cancel/update retaining the record, and delete with confirmation.
+- Verify new IDs are unique and additions, cancellations, and deletions survive refresh and service restart without repeat seeding.
+- Keep Python models and the database controller separate from the Vue view. Authentication, payment, and bonus pricing are excluded.
 
 ## Development Priorities
 
