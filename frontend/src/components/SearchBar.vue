@@ -13,11 +13,12 @@ const submit = () => emit('search', city.value.trim())
     @submit.prevent="submit"
   >
     <label class="field">
-      <span>City</span>
+      <span>Hotel name or city</span>
       <input
         v-model="city"
         type="search"
-        placeholder="Try Boston or State College"
+        placeholder="Try Inn, Trail, or Boston"
+        maxlength="80"
         required
       >
     </label>
