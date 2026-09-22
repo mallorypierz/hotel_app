@@ -5,7 +5,7 @@
 - `backend/.venv/bin/python -m pytest backend/tests`: **12 passed in 0.30s**.
 - `npm run lint` in `frontend/`: **passed**, no warnings.
 - `npm run build` in `frontend/`: **passed**, 14 modules, 159ms.
-- Reviewed tracked diffs and new Python/Vue files. VS Code is not available at its standard installation path; review was performed directly from file contents and Git diff, not represented as a VS Code review.
+- Reviewed tracked diffs and new Python/Vue files. The controller was also visually scanned in VS Code (located in the user Applications folder).
 
 ## Browser verification
 

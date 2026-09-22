@@ -2,7 +2,7 @@
 
 ## State
 
-Wayfinder Hotels Part 2 is implemented: hotel-name/city search, SQLite seeded once from all four CSVs, demo traveler selection, booking confirmation/history, cancellation retaining the record, and confirmed deletion. Models/storage, controller, FastAPI routes, and Vue views are separate. Existing work was completed on `codex/part-two-completion`; the reviewed feature is intended for main and origin/main.
+Wayfinder Hotels Part 2 is implemented: hotel-name/city search, SQLite seeded once from all four CSVs, demo traveler selection, booking confirmation/history, cancellation retaining the record, and confirmed deletion. Models/storage, controller, FastAPI routes, and Vue views are separate. Existing work was completed on `codex/part-two-completion`; the reviewed feature was merged into main at `89df62af6849366f106c85970512f36d1ae79ec5`.
 
 ## Verification
 
@@ -14,4 +14,8 @@ Part 1: `c9eaf9117e104d36be5d50fbfc94697c5791399b`. Repository: https://github.c
 
 ## Remaining user work
 
-Record an under-three-minute Part 2 video, add its accessible link to report.md, and upload the report to the course submission page. Earlier local videos are preserved but are not submitted as Part 2 evidence. Review the changes in VS Code if required literally by the rubric (not installed at its standard path here), and verify instructor repository/video access. The full Activity 2 worksheet was not supplied. Authentication and surge pricing are optional and excluded. The app uses fixed classroom stays and makes no real reservations.
+Record an under-three-minute Part 2 video, add its accessible link to report.md, and upload the report to the course submission page. Earlier local videos are preserved but are not submitted as Part 2 evidence. Verify instructor repository/video access. The full Activity 2 worksheet was not supplied. Authentication and surge pricing are optional and excluded. The app uses fixed classroom stays and makes no real reservations.
+
+## Publication
+
+The user explicitly approved committing and publishing the application, tests, report, documentation, and screenshots to the existing GitHub repository. The final report and review notes form a documentation-only checkpoint after the verified application merge. Earlier unused screenshots and videos remain local and are not submission evidence.
