@@ -292,3 +292,15 @@ repeated successfully; no console warnings/errors. Application source unchanged.
 Report will use immutable artifact URLs after this evidence checkpoint. Student
 reported no additional AI. Instructor-specific network/device access and rubric
 compliance cannot be guaranteed; Canvas upload remains the student's final action.
+
+
+## Public video authorization — September 29, 2026
+
+The student explicitly changed the earlier privacy preference: “it can be public
+now.” The 25,559,356-byte H.264 sharing copy is selected for publication as
+`docs/live-hotel-student-demo.mp4`; source MOV remains untouched. Previous private
+instructions above are historical and superseded for this recording copy.
+Report will prominently link the published video using an immutable URL.
+Before this checkpoint, reviewed the full pending diff and manually repeated
+Boston (four labeled rows) and Aspen (“No stays matched”); browser warning/error
+log empty. Application source unchanged; no new live requests or booking changes.
