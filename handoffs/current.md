@@ -276,3 +276,19 @@ statements are historical and superseded by this entry. Six unrelated legacy
 media files remain untracked; secrets/database/runtime artifacts remain excluded.
 No new live calls or booking changes. Services were left running. Demo recording,
 instructor access, remaining report fields and Canvas submission are still pending.
+
+
+## Final recording and public access — September 29, 2026
+
+Student supplied a 126.33-second silent MOV. Preserved source; native full-resolution
+H.264 sharing copy in ignored .capture/private-submission/live-hotel-student-demo.mp4
+(126.15 seconds). Student explicitly chose to keep it private; do not publish
+the video or raw metadata. Deliver privately via Canvas or restricted link. Sampled
+frames show 06109/16801 results and selected list/map states; other script steps
+and absence of interception are not established. Public repository metadata and
+114 artifact/report URL checks plus ten external research-source checks passed.
+See docs/live-hotel-final-access.md and JSON records. Browser Boston/Aspen gate
+repeated successfully; no console warnings/errors. Application source unchanged.
+Report will use immutable artifact URLs after this evidence checkpoint. Student
+reported no additional AI. Instructor-specific network/device access and rubric
+compliance cannot be guaranteed; Canvas upload remains the student's final action.

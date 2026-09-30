@@ -1,0 +1,906 @@
+{
+  "checked_at_utc": "2026-09-30T01:21:37.691886+00:00",
+  "scope": "All 96 assessed manifest files and HTTP links in current/previous reports; unauthenticated HTTPS. GitHub raw bytes compared to assessed Git objects. No instructor account impersonation.",
+  "results": [
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/.gitignore",
+      "http_status": 200,
+      "authentication": "none",
+      "path": ".gitignore",
+      "bytes": 154,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/AGENTS.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "AGENTS.md",
+      "bytes": 6057,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/README.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "README.md",
+      "bytes": 7825,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/app/config.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/app/config.py",
+      "bytes": 277,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/app/discovery.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/app/discovery.py",
+      "bytes": 3431,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/app/discovery_models.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/app/discovery_models.py",
+      "bytes": 1536,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/app/geocoding.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/app/geocoding.py",
+      "bytes": 2460,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/app/main.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/app/main.py",
+      "bytes": 3769,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/app/provider.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/app/provider.py",
+      "bytes": 2381,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/requirements.txt",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/requirements.txt",
+      "bytes": 326,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/tests/test_config.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/tests/test_config.py",
+      "bytes": 1050,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/tests/test_demo_zip_route.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/tests/test_demo_zip_route.py",
+      "bytes": 3282,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/tests/test_discovery.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/tests/test_discovery.py",
+      "bytes": 9994,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/backend/tests/test_geocoding.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "backend/tests/test_geocoding.py",
+      "bytes": 3976,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/d1-favicon-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/d1-favicon-results.json",
+      "bytes": 411,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/d1-favicon.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/d1-favicon.cjs",
+      "bytes": 2446,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/d1-regression-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/d1-regression-results.json",
+      "bytes": 733,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/d1-regression.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/d1-regression.cjs",
+      "bytes": 604,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/discovery-live-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/discovery-live-results.json",
+      "bytes": 394,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/discovery-live.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/discovery-live.cjs",
+      "bytes": 2381,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/discovery-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/discovery-results.json",
+      "bytes": 733,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/discovery.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/discovery.cjs",
+      "bytes": 8332,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-baseline.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-baseline.json",
+      "bytes": 3688,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-bookings-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-bookings-results.json",
+      "bytes": 1024,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-bookings.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-bookings.cjs",
+      "bytes": 4677,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-extended-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-extended-results.json",
+      "bytes": 6391,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-extended.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-extended.cjs",
+      "bytes": 16210,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-followup-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-followup-results.json",
+      "bytes": 2037,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-followup.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-followup.cjs",
+      "bytes": 3634,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-integrity-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-integrity-results.json",
+      "bytes": 212,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-provider-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-provider-results.json",
+      "bytes": 2208,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-provider.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-provider.py",
+      "bytes": 2275,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-restart-results.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-restart-results.json",
+      "bytes": 615,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/smoke-restart.cjs",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/browser-checks/smoke-restart.cjs",
+      "bytes": 4077,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/d1-controlled-controlled-desktop.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/d1-controlled-controlled-desktop.png",
+      "bytes": 140570,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/d1-controlled-controlled-mobile.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/d1-controlled-controlled-mobile.png",
+      "bytes": 118673,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/d1-controlled-tile-failure.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/d1-controlled-tile-failure.png",
+      "bytes": 138979,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/d1-fresh-load.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/d1-fresh-load.png",
+      "bytes": 138901,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-ai-evidence.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-ai-evidence.md",
+      "bytes": 9211,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-checkpoint-files.txt",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-checkpoint-files.txt",
+      "bytes": 3166,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-checkpoint.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-checkpoint.md",
+      "bytes": 12407,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-demo-script.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-demo-script.md",
+      "bytes": 5211,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-design.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-design.md",
+      "bytes": 12314,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-mockup-v1.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-mockup-v1.png",
+      "bytes": 243138,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-plan.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-plan.md",
+      "bytes": 22162,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-research.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-research.md",
+      "bytes": 15066,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-states-v1.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-states-v1.png",
+      "bytes": 150557,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-ui-controlled-desktop.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-ui-controlled-desktop.png",
+      "bytes": 139059,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-ui-controlled-mobile.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-ui-controlled-mobile.png",
+      "bytes": 118673,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-ui-live-02108.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-ui-live-02108.png",
+      "bytes": 861809,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-ui-tile-failure.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-ui-tile-failure.png",
+      "bytes": 138979,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-verification.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/live-hotel-verification.md",
+      "bytes": 39020,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/render-live-hotel-mockup.py",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/render-live-hotel-mockup.py",
+      "bytes": 8932,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-booking-cleanup.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-booking-cleanup.png",
+      "bytes": 73899,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-booking-created.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-booking-created.png",
+      "bytes": 112495,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-booking-refreshed.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-booking-refreshed.png",
+      "bytes": 99312,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-booking-restarted.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-booking-restarted.png",
+      "bytes": 99312,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-live-02108.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-live-02108.png",
+      "bytes": 535848,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-live-16802.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-live-16802.png",
+      "bytes": 316662,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-live-320.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-live-320.png",
+      "bytes": 162560,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-sample-aspen.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-sample-aspen.png",
+      "bytes": 18752,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-sample-boston.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-sample-boston.png",
+      "bytes": 54627,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-empty.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-empty.png",
+      "bytes": 110306,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-invalid.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-invalid.png",
+      "bytes": 52586,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-loading.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-loading.png",
+      "bytes": 49784,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-mismatched_postcode.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-mismatched_postcode.png",
+      "bytes": 53940,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-non_us.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-non_us.png",
+      "bytes": 53940,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-provider_failure.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-provider_failure.png",
+      "bytes": 54212,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-quota.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-quota.png",
+      "bytes": 54234,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-rate_limit.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-rate_limit.png",
+      "bytes": 54234,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-selection-mobile.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-selection-mobile.png",
+      "bytes": 113665,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-tile-failure.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-tile-failure.png",
+      "bytes": 125058,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-unresolved.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/smoke-simulated-unresolved.png",
+      "bytes": 53940,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/submission-preparation-checks.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/submission-preparation-checks.json",
+      "bytes": 845,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/submission-review-aspen.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/submission-review-aspen.png",
+      "bytes": 39673,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/submission-review-boston.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/submission-review-boston.png",
+      "bytes": 44230,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/zip-02108.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/zip-02108.png",
+      "bytes": 33769,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/zip-16802.png",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/zip-16802.png",
+      "bytes": 34941,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/docs/zip-lookup.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "docs/zip-lookup.md",
+      "bytes": 3561,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/index.html",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/index.html",
+      "bytes": 449,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/package-lock.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/package-lock.json",
+      "bytes": 74443,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/package.json",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/package.json",
+      "bytes": 557,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/public/favicon.svg",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/public/favicon.svg",
+      "bytes": 213,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/App.vue",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/App.vue",
+      "bytes": 3476,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/components/DiscoveryForm.vue",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/components/DiscoveryForm.vue",
+      "bytes": 1594,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/components/DiscoveryList.vue",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/components/DiscoveryList.vue",
+      "bytes": 1633,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/components/DiscoveryMap.vue",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/components/DiscoveryMap.vue",
+      "bytes": 5629,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/components/HotelDiscovery.vue",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/components/HotelDiscovery.vue",
+      "bytes": 5159,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/components/ZipLookupPanel.vue",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/components/ZipLookupPanel.vue",
+      "bytes": 3902,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/composables/useDiscovery.js",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/composables/useDiscovery.js",
+      "bytes": 3387,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/frontend/src/style.css",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "frontend/src/style.css",
+      "bytes": 5900,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/handoffs/current.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "handoffs/current.md",
+      "bytes": 17274,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/prompts/10-live-hotel-search.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "prompts/10-live-hotel-search.md",
+      "bytes": 12731,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/prompts/11-live-hotel-actual-evidence.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "prompts/11-live-hotel-actual-evidence.md",
+      "bytes": 5169,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/report-previous-assignment-part2.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "report-previous-assignment-part2.md",
+      "bytes": 5789,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mallorypierz/hotel_app/e6687356b620798414cb249cf5bde918d461aead/report.md",
+      "http_status": 200,
+      "authentication": "none",
+      "path": "report.md",
+      "bytes": 12728,
+      "matches_assessed_commit": true
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app.git",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/AGENTS.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/README.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/design-pipeline.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-confirmation.png",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-empty.png",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-mobile.png",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-persistence.png",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-search.png",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/part2-student-demo.mov",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/docs/verification.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/handoffs/current.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/prompts/04-visual-redesign.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/blob/main/prompts/09-part-2-sqlite-bookings.md",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/commit/89df62af6849366f106c85970512f36d1ae79ec5",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/commit/c9eaf9117e104d36be5d50fbfc94697c5791399b",
+      "http_status": 200,
+      "authentication": "none"
+    },
+    {
+      "url": "https://github.com/mallorypierz/hotel_app/commit/e6687356b620798414cb249cf5bde918d461aead",
+      "http_status": 200,
+      "authentication": "none"
+    }
+  ],
+  "research_source_links": [
+    {
+      "url": "https://apidocs.geoapify.com/docs/geocoding/",
+      "http_status": 200
+    },
+    {
+      "url": "https://apidocs.geoapify.com/docs/places/",
+      "http_status": 200
+    },
+    {
+      "url": "https://leafletjs.com/examples/quick-start/",
+      "http_status": 200
+    },
+    {
+      "url": "https://leafletjs.com/reference.html",
+      "http_status": 200
+    },
+    {
+      "url": "https://operations.osmfoundation.org/policies/tiles/",
+      "http_status": 200
+    },
+    {
+      "url": "https://www.geoapify.com/pricing-details/",
+      "http_status": 200
+    },
+    {
+      "url": "https://www.geoapify.com/pricing/",
+      "http_status": 200
+    },
+    {
+      "url": "https://www.geoapify.com/terms-and-conditions/",
+      "http_status": 200
+    },
+    {
+      "url": "https://www.google.com/maps/search/hotels+near+02108/",
+      "http_status": 200
+    },
+    {
+      "url": "https://www.openstreetmap.org/search?query=02108%2C%20United%20States",
+      "http_status": 200
+    }
+  ]
+}

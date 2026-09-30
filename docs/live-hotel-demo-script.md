@@ -1,6 +1,6 @@
 # Assignment 2, Part 1 — student recording script
 
-Status: **new screen recording required; no video/link supplied yet.** Aim for
+Status: **student recording supplied September 29, 2026; see [review and limitations](live-hotel-final-access.md).** Aim for
 about 2½–3 minutes; confirm the instructor's actual time limit rather than
 assuming the previous assignment's limit applies. Use the real checkpoint
 version once published. Prior `part2-student-demo.mov`, `part2-demo.m4v`, and

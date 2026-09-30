@@ -96,3 +96,16 @@ verification is claimed. The previous assignment recording is not reused for
 Part 1. The new demo, assessed commit, publication and Canvas submission are
 pending. The student must confirm that this log captures any additional tools
 used outside the recorded work and review the final report before submitting.
+
+
+## Final evidence update — September 29, 2026
+
+Student replied “no AI” when asked about additional AI tools; this is recorded
+as no additional tools reported, retaining the earlier explicit Codex GPT-6
+Astra/medium disclosure for this work. Supplied screen recording is student
+content, not generated video. Native macOS AVFoundation/Swift inspected metadata
+and frames and transcoded a sharing copy; avconvert attempts were revised because
+outputs remained large. Python urllib with the documented CA bundle verified
+public GitHub artifacts and research links. No new model or dependency added.
+Assessed code is published; recording and access review are documented in
+[final evidence](live-hotel-final-access.md). Canvas upload remains outstanding.
