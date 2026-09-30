@@ -1,31 +1,32 @@
 # Assignment 2, Part 1 — Live Hotel Search and Map
 
-**Submission preparation: September 29, 2026. Not yet submitted.**
+**Report finalized from available evidence: September 29, 2026. Canvas submission remains outstanding.**
 
 | Required item | Current status |
 | --- | --- |
-| Repository | [mallorypierz/hotel_app](https://github.com/mallorypierz/hotel_app) — configured Git origin; instructor access **PENDING** |
+| Repository | [mallorypierz/hotel_app](https://github.com/mallorypierz/hotel_app) — public; unauthenticated access verified September 29, 2026 |
 | Assessed Part 1 code commit | [`e6687356b620798414cb249cf5bde918d461aead`](https://github.com/mallorypierz/hotel_app/commit/e6687356b620798414cb249cf5bde918d461aead) |
 | Published code/evidence | Published to `origin/main`; assessed checkpoint linked above |
-| New screen-recorded demonstration | **PENDING — student must record and supply the link** |
-| Instructor access to every linked artifact | **PENDING** |
+| New screen-recorded demonstration | Supplied September 29; kept private at student request; separate Canvas attachment required |
+| Artifact access | Public repository and linked artifacts verified without login; private video delivery/access still required |
 | Canvas upload | **PENDING — not performed** |
 
 Assessed application/evidence checkpoint `e6687356b620798414cb249cf5bde918d461aead` was created and pushed to
 `origin/main` after final diff review and manual Boston/Aspen checks. This report
 update is a documentation-only follow-up; assessed application code is unchanged.
-Instructor access is not established by an authenticated Git push. Test access
-from the instructor's authorized account before submitting.
+Public access was separately checked without credentials: repository metadata,
+all 96 assessed artifact files (byte-for-byte matches), and current/previous
+report URLs passed. This establishes public availability without an invitation;
+it does not impersonate the instructor or guarantee institutional-network access.
 
 The previous assignment report is preserved byte-for-byte as
-[report-previous-assignment-part2.md](report-previous-assignment-part2.md) beside
+[report-previous-assignment-part2.md](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/report-previous-assignment-part2.md) beside
 this report. Its original link base and artifacts are unchanged. Its recording
 is historical evidence only, not evidence of the live hotel/map feature.
 
-Links below are repository-relative for local/GitHub review. Before uploading
-this standalone Markdown file to Canvas, replace artifact links with tested,
-instructor-accessible GitHub URLs pinned to the assessed code/evidence commit
-(or the real hosted recording). Do not submit with these publication fields pending.
+Existing assessed artifact links below are immutable GitHub URLs suitable for
+standalone Markdown. The recording is intentionally private and must be attached separately in Canvas.
+The previous report remains unchanged.
 
 ## Implemented scope and MVC
 
@@ -66,15 +67,15 @@ included in Part 1.
 
 Use the checked-out project root. Recorded environment: Python 3.12.5; the
 September 29 dependency audit recorded Node 24.20.0/npm 11.19.0. These are
-observed versions, not a tested minimum-version matrix. See [README](README.md)
-and the [dependency audit](docs/live-hotel-plan.md).
+observed versions, not a tested minimum-version matrix. See [README](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/README.md)
+and the [dependency audit](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-plan.md).
 
 For a fresh checkout, after the project's required dependency-install approval:
 
 ```sh
 git clone https://github.com/mallorypierz/hotel_app.git
 cd hotel_app
-# After publication, check out the real assessed commit recorded above.
+git checkout e6687356b620798414cb249cf5bde918d461aead
 python3 -m venv backend/.venv
 backend/.venv/bin/python -m pip install -r backend/requirements.txt
 cd frontend
@@ -128,16 +129,16 @@ npm run build
 
 ## Research, original design and changes
 
-- [Research and dated official sources](docs/live-hotel-research.md): recorded
+- [Research and dated official sources](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-research.md): recorded
   browser inspection of OpenStreetMap and Google Maps, plus official Geoapify,
   Leaflet and OSM policy sources; inspected behavior is distinguished from docs.
-- Original **pre-implementation** [layout mockup](docs/live-hotel-mockup-v1.png)
-  and [state board](docs/live-hotel-states-v1.png), both preserved unchanged.
-- [Design explanation and later changes](docs/live-hotel-design.md): desktop
+- Original **pre-implementation** [layout mockup](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-mockup-v1.png)
+  and [state board](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-states-v1.png), both preserved unchanged.
+- [Design explanation and later changes](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-design.md): desktop
   sticky map, stacked narrow layout, selection details outside attribution,
   Show search area control, omission counts, explicit keyboard handlers,
   abort/version protection and quota countdown.
-- [Agreed API contract and limits](docs/live-hotel-plan.md).
+- [Agreed API contract and limits](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-plan.md).
 
 OSM attribution remains linked and visible. Keyless raster tiles use normal
 browser caching/Referer behavior and viewport loading, with no bulk/offline
@@ -147,7 +148,7 @@ list selection and zoom remain available.
 ## Verification from actual evidence
 
 Full inputs, expected/observed results, corrections and screenshots are in
-[the verification record](docs/live-hotel-verification.md). Dates below are
+[the verification record](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-verification.md). Dates below are
 September 29, 2026, Eastern; machine logs use September 30 UTC where applicable.
 
 | Evidence | Recorded result |
@@ -160,12 +161,12 @@ September 29, 2026, Eastern; machine logs use September 30 UTC where applicable.
 | Selection/accessibility/layout | Both directions; Enter/Space, same-name IDs, focus retention, 390/320 px reflow and attribution passed in controlled checks |
 | Sample regression | Boston four joined trip rows, Aspen no results; booking create/cancel/delete/refresh/restart passed; original database restored |
 | D1 discovered then fixed | Missing `/favicon.ico` caused console 404; local SVG/reference correction passed fresh-browser 200 `image/svg+xml`, no fallback request or console/page errors; 16 controlled regressions passed |
-| Submission preparation browser review | Boston/Aspen manually operated and inspected again; see [review/checkpoint plan](docs/live-hotel-checkpoint.md) |
+| Submission preparation browser review | Boston/Aspen manually operated and inspected again; see [review/checkpoint plan](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/live-hotel-checkpoint.md) |
 
-[Live 16802](docs/smoke-live-16802.png) · [Live 02108](docs/smoke-live-02108.png) ·
-[320px live layout](docs/smoke-live-320.png) ·
-[simulated selection](docs/smoke-simulated-selection-mobile.png) ·
-[D1 fresh-load result](docs/browser-checks/d1-favicon-results.json).
+[Live 16802](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-live-16802.png) · [Live 02108](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-live-02108.png) ·
+[320px live layout](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-live-320.png) ·
+[simulated selection](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/smoke-simulated-selection-mobile.png) ·
+[D1 fresh-load result](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/docs/browser-checks/d1-favicon-results.json).
 
 The two live result counts are observations, never fixed acceptance counts or
 claims of complete inventory. Controlled screenshots/errors are simulated
@@ -178,29 +179,54 @@ no physical-device, full screen-reader, cross-browser matrix, or independent
 hotel-location survey. Not every live marker was individually clicked. The
 credential review was not an exhaustive Git-history/browser-memory audit.
 Historical earlier checks were not all repeated for the favicon-only fix.
-Instructor access and recording remain unverified; publication succeeded.
+Public artifact access is verified. Instructor-specific device/network access
+is not tested; recording-review limits are described below.
 
-## Demonstration — pending student recording
+## Student-recorded demonstration
 
-**Video URL: PENDING — no Assignment 2, Part 1 recording supplied.**
-**Recording date, duration, assessed version and access check: PENDING.**
+**Private video attachment:** `Screen Recording 2026-09-29 at 9.14.24 PM.mov`
+(original), or the smaller `live-hotel-student-demo.mp4` sharing copy.
+**Video URL:** not public by student request. Upload the file separately to
+Canvas with this report, or provide an instructor-restricted link. Private
+video delivery and instructor access have not yet been verified.
 
-Follow the [short recording sequence](docs/live-hotel-demo-script.md). Supply a
-new playable/shareable recording of this actual feature and its URL; do not
-substitute a prior booking/ZIP-only recording or screenshots. Label any
-intercepted error demonstration “SIMULATED — controlled response”.
+Recorded September 29, 2026, at approximately 21:14 Eastern (source filename).
+Original duration: 126.33 seconds; H.264 sharing copy: 126.15 seconds (about
+**2 minutes 6 seconds**), 1702×1370, **no audio track**. The original MOV is
+preserved; the sharing copy re-encodes the supplied video without synthetic
+content or intentional trimming. See the [recording/access review](https://github.com/mallorypierz/hotel_app/blob/46c14205d758045e0e837d34c12a7010d4e14964/docs/live-hotel-final-access.md).
+
+Sampled frames show the localhost app, leading-zero ZIP `06109` (Wethersfield,
+US), `16801` (State College, US), returned centers, the 5 km explanation and
+20-result limit, hotel names/addresses, selected list/marker states, and map
+attribution. The interface matches assessed code `e668735`; the application
+source remains unchanged since that checkpoint. A Git SHA and provider request
+trace are not displayed in the clip, so it alone does not prove runtime version
+or live transport. No simulated label was observed; interception status was not
+explicitly confirmed. Earlier live and controlled verification retain their
+separate labels.
+
+The review sampled frames every ten seconds; it was not continuous playback or a
+frame-by-frame audit. Startup terminals, spoken explanation, invalid/error
+feedback, keyboard operation, and narrow-screen demonstration are not established
+by that review. These are covered where noted in the verification record, not
+claimed as demonstrated by this clip. The course recording rubric/time limit
+was not supplied; compliance is not inferred. The [recording script](https://github.com/mallorypierz/hotel_app/blob/46c14205d758045e0e837d34c12a7010d4e14964/docs/live-hotel-demo-script.md)
+remains available if a supplemental demonstration is required.
 
 ## AI disclosure and evidence
 
 AI-assisted planning, implementation, tests, debugging and documentation used
 Codex. The student confirmed the selected setting as **GPT-6 Astra, medium
 reasoning** (“gpt 6 astra medium”). This is a student-confirmed setting, not a
-per-call backend model attestation. The [AI disclosure/evidence log](docs/live-hotel-ai-evidence.md)
-identifies tools, scope and provenance; [actual prompt excerpts](prompts/11-live-hotel-actual-evidence.md)
+per-call backend model attestation. The [AI disclosure/evidence log](https://github.com/mallorypierz/hotel_app/blob/46c14205d758045e0e837d34c12a7010d4e14964/docs/live-hotel-ai-evidence.md)
+identifies tools, scope and provenance; [actual prompt excerpts](https://github.com/mallorypierz/hotel_app/blob/e6687356b620798414cb249cf5bde918d461aead/prompts/11-live-hotel-actual-evidence.md)
 link instructions to code, decisions and verification. It preserves genuine
 failed/revised approaches, including the favicon failure and correction.
-The student must review the final report and disclose any additional AI tools
-used outside this recorded work; none are inferred here.
+When asked about additional AI tools, the student replied “no AI”; no additional
+tools were reported. The prior explicit Codex/model disclosure is retained.
+Native macOS AVFoundation/Swift inspected and transcoded the supplied recording;
+Python checked public artifact links. No AI-generated video was substituted.
 
 ## Remaining submission checklist
 
@@ -208,14 +234,12 @@ used outside this recorded work; none are inferred here.
   gate; commit and publish assessed code/evidence, excluding credentials/runtime
   files and unrelated prior media.
 - [x] Record the actual assessed SHA above; authenticated Git push succeeded.
-- [ ] Record the new Part 1 demo; supply its playable URL, date, duration and
-  assessed-version confirmation; identify any simulated segment.
-- [ ] Test instructor access to the repository, exact commit, every research/
-  mockup/design/verification/AI artifact, screenshots and video. Preserve the
-  previous report's artifacts and verify their links too.
-- [ ] Replace all pending report fields and convert repository-relative links
-  to verified immutable URLs for standalone Canvas delivery; confirm any
-  additional AI tools and the course rubric/recording limit.
+- [x] Receive the new Part 1 recording and record its date, duration, and review limits.
+- [x] Verify public repository/assessed artifact access and previous-report links.
+- [ ] Attach the private recording directly to Canvas (or use an instructor-restricted
+  link), and verify its availability in the submission preview.
+- [ ] Confirm recording/rubric requirements if additional demonstrations are required;
+  the supplied clip is silent and sampled review does not establish every script step.
 - [ ] Upload the completed `report.md` to Canvas and verify the submission receipt.
 
 **Code/evidence is published. The assignment is not yet submitted.**
