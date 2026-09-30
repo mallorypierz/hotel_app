@@ -68,3 +68,11 @@ Report will prominently link the published video using an immutable URL.
 Before this checkpoint, reviewed the full pending diff and manually repeated
 Boston (four labeled rows) and Aspen (“No stays matched”); browser warning/error
 log empty. Application source unchanged; no new live requests or booking changes.
+
+
+Public video verification: the immutable raw URL and GitHub file page returned
+HTTP 200 without credentials. Downloaded 25,559,356 bytes and SHA-256 matched the
+local sharing copy. The server uses application/octet-stream. Signed-out browser
+inspection showed a Public repository and Download raw file/View raw controls;
+GitHub does not offer an inline preview at this file size. The report therefore
+provides a prominent direct download link plus a GitHub file-page fallback.

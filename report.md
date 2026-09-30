@@ -1,5 +1,9 @@
 # Wayfinder Hotels — Part 1
 
+> **Demonstration recording · 2 minutes 6 seconds (silent)**
+> **[Watch/download the Part 1 screen recording](https://raw.githubusercontent.com/mallorypierz/hotel_app/98b7b19c6f309d31b6349d9f495112828c0f595f/docs/live-hotel-student-demo.mp4)** · [GitHub video page](https://github.com/mallorypierz/hotel_app/blob/98b7b19c6f309d31b6349d9f495112828c0f595f/docs/live-hotel-student-demo.mp4)
+> Public access — no sign-in required. GitHub does not preview this file size; download the MP4 and open it in your video player.
+
 ## Repository and commit
 
 **Assignment 2, Part 1 — Live Hotel Search and Map**
@@ -11,8 +15,8 @@
 | Repository | [mallorypierz/hotel_app](https://github.com/mallorypierz/hotel_app) — public; unauthenticated access verified September 29, 2026 |
 | Assessed Part 1 code commit | [`e6687356b620798414cb249cf5bde918d461aead`](https://github.com/mallorypierz/hotel_app/commit/e6687356b620798414cb249cf5bde918d461aead) |
 | Published code/evidence | Published to `origin/main`; assessed checkpoint linked above |
-| New screen-recorded demonstration | Supplied September 29; separate Canvas attachment  |
-| Artifact access | Public repository and linked artifacts verified without login; private video delivery/access still required |
+| New screen-recorded demonstration | [Watch the 2:06 recording](https://raw.githubusercontent.com/mallorypierz/hotel_app/98b7b19c6f309d31b6349d9f495112828c0f595f/docs/live-hotel-student-demo.mp4) — publicly available |
+| Artifact access | Public repository, linked artifacts, and recording available without login |
 | Canvas upload | **PENDING — not performed** |
 
 Assessed application/evidence checkpoint `e6687356b620798414cb249cf5bde918d461aead` was created and pushed to
@@ -29,7 +33,7 @@ this report. Its original link base and artifacts are unchanged. Its recording
 is historical evidence only, not evidence of the live hotel/map feature.
 
 Existing assessed artifact links below are immutable GitHub URLs suitable for
-standalone Markdown. The recording is intentionally private and must be attached separately in Canvas.
+standalone Markdown. The recording is publicly linked above and in the demonstration section below.
 The previous report remains unchanged.
 
 ## Implementation
@@ -108,19 +112,21 @@ Historical earlier checks were not all repeated for the favicon-only fix.
 Public artifact access is verified. Instructor-specific device/network access
 is not tested; recording-review limits are described below.
 
+<a id="demonstration-recording"></a>
+
 **Student-recorded demonstration**
 
-**Private video attachment:** `Screen Recording 2026-09-29 at 9.14.24 PM.mov`
-(original), or the smaller `live-hotel-student-demo.mp4` sharing copy.
-**Video URL:** not public by student request. Upload the file separately to
-Canvas with this report, or provide an instructor-restricted link. Private
-video delivery and instructor access have not yet been verified.
+**[Watch the Part 1 demonstration — 2 minutes 6 seconds](https://raw.githubusercontent.com/mallorypierz/hotel_app/98b7b19c6f309d31b6349d9f495112828c0f595f/docs/live-hotel-student-demo.mp4)**
+
+[Open the video on GitHub](https://github.com/mallorypierz/hotel_app/blob/98b7b19c6f309d31b6349d9f495112828c0f595f/docs/live-hotel-student-demo.mp4). Public MP4; no account or permission request
+is needed. GitHub does not preview this file size; use the direct link above to
+download and open it in your usual video player. The student authorized public publication.
 
 Recorded September 29, 2026, at approximately 21:14 Eastern (source filename).
 Original duration: 126.33 seconds; H.264 sharing copy: 126.15 seconds (about
 **2 minutes 6 seconds**), 1702×1370, **no audio track**. The original MOV is
 preserved; the sharing copy re-encodes the supplied video without synthetic
-content or intentional trimming. See the [recording/access review](https://github.com/mallorypierz/hotel_app/blob/46c14205d758045e0e837d34c12a7010d4e14964/docs/live-hotel-final-access.md).
+content or intentional trimming. See the [recording/access review](https://github.com/mallorypierz/hotel_app/blob/98b7b19c6f309d31b6349d9f495112828c0f595f/docs/live-hotel-final-access.md).
 
 Sampled frames show the localhost app, leading-zero ZIP `06109` (Wethersfield,
 US), `16801` (State College, US), returned centers, the 5 km explanation and
