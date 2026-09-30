@@ -265,3 +265,14 @@ Backend 124 passed in 0.40s; lint/build passed (26 modules, 194 ms). Selected
 96 files; secrets/runtime data and six unrelated legacy media excluded. Existing
 services remain running. Student authorized commit/push; actual SHA will be
 recorded after checkpoint. Demo/access/Canvas remain pending.
+
+
+## Published Part 1 checkpoint — September 29, 2026
+
+Student-authorized checkpoint [e6687356b620798414cb249cf5bde918d461aead](https://github.com/mallorypierz/hotel_app/commit/e6687356b620798414cb249cf5bde918d461aead) contains the reviewed 96 files.
+`git push origin main` succeeded (`eb256a3..e668735`). A documentation-only
+follow-up records this real assessed code SHA in report.md. Earlier pending/no-push
+statements are historical and superseded by this entry. Six unrelated legacy
+media files remain untracked; secrets/database/runtime artifacts remain excluded.
+No new live calls or booking changes. Services were left running. Demo recording,
+instructor access, remaining report fields and Canvas submission are still pending.

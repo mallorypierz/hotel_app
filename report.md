@@ -5,18 +5,17 @@
 | Required item | Current status |
 | --- | --- |
 | Repository | [mallorypierz/hotel_app](https://github.com/mallorypierz/hotel_app) — configured Git origin; instructor access **PENDING** |
-| Assessed Part 1 code commit | **PENDING — no checkpoint for this feature exists yet** |
-| Published code/evidence | **PENDING — current implementation and new evidence are local, uncommitted** |
+| Assessed Part 1 code commit | [`e6687356b620798414cb249cf5bde918d461aead`](https://github.com/mallorypierz/hotel_app/commit/e6687356b620798414cb249cf5bde918d461aead) |
+| Published code/evidence | Published to `origin/main`; assessed checkpoint linked above |
 | New screen-recorded demonstration | **PENDING — student must record and supply the link** |
 | Instructor access to every linked artifact | **PENDING** |
 | Canvas upload | **PENDING — not performed** |
 
-Local HEAD is `eb256a3ac5cc08be4029e6e3354099c3ce903163`, the previous assignment's
-video/report checkpoint. It is **not** the assessed commit for this feature.
-No commit or push was made during this preparation. An attempted unauthenticated
-repository fetch did not return content, so neither public visibility nor
-instructor access is asserted. Test access from a signed-out browser or the
-instructor's authorized account after publishing.
+Assessed application/evidence checkpoint `e6687356b620798414cb249cf5bde918d461aead` was created and pushed to
+`origin/main` after final diff review and manual Boston/Aspen checks. This report
+update is a documentation-only follow-up; assessed application code is unchanged.
+Instructor access is not established by an authenticated Git push. Test access
+from the instructor's authorized account before submitting.
 
 The previous assignment report is preserved byte-for-byte as
 [report-previous-assignment-part2.md](report-previous-assignment-part2.md) beside
@@ -153,8 +152,8 @@ September 29, 2026, Eastern; machine logs use September 30 UTC where applicable.
 
 | Evidence | Recorded result |
 | --- | --- |
-| Full backend suite, extended smoke pass | **124 passed in 0.43s** |
-| Frontend lint/build after final favicon fix | Passed; 28 modules, build 289 ms |
+| Full backend suite, final checkpoint gate | **124 passed in 0.40s** |
+| Frontend lint/build after single-ZIP refinement | Passed; 26 modules, build 194 ms |
 | Live `16802`, 20:33:24 Eastern | HTTP 200; exact U.S. center; API/list/marker counts matched (20 at observation time) |
 | Live `02108`, 20:33:26 Eastern | HTTP 200; leading zero retained; exact U.S. center; counts matched (20 at observation time) |
 | Controlled upstream/browser responses | Invalid, mismatched postcode/country, unresolved, empty, failure, quota/rate, loading/stale and tile-failure checks passed; no live quota exhausted |
@@ -179,7 +178,7 @@ no physical-device, full screen-reader, cross-browser matrix, or independent
 hotel-location survey. Not every live marker was individually clicked. The
 credential review was not an exhaustive Git-history/browser-memory audit.
 Historical earlier checks were not all repeated for the favicon-only fix.
-Instructor access, final publication and recording remain unverified.
+Instructor access and recording remain unverified; publication succeeded.
 
 ## Demonstration — pending student recording
 
@@ -205,13 +204,10 @@ used outside this recorded work; none are inferred here.
 
 ## Remaining submission checklist
 
-- [ ] Review the [explicit checkpoint file list](docs/live-hotel-checkpoint.md),
-  rerun the final diff/Boston/Aspen gate if anything changes, then authorize a
-  checkpoint and publication of the assessed code/evidence. Do not include secrets,
-  generated dependencies/database files, or unrelated prior media.
-- [ ] Record the real assessed code SHA and immutable repository link above;
-  verify the published commit contains the implementation. A later report-only
-  commit may point to that assessed code commit; do not invent a future SHA.
+- [x] Review the explicit checkpoint file list and complete final diff/Boston/Aspen
+  gate; commit and publish assessed code/evidence, excluding credentials/runtime
+  files and unrelated prior media.
+- [x] Record the actual assessed SHA above; authenticated Git push succeeded.
 - [ ] Record the new Part 1 demo; supply its playable URL, date, duration and
   assessed-version confirmation; identify any simulated segment.
 - [ ] Test instructor access to the repository, exact commit, every research/
@@ -222,4 +218,4 @@ used outside this recorded work; none are inferred here.
   additional AI tools and the course rubric/recording limit.
 - [ ] Upload the completed `report.md` to Canvas and verify the submission receipt.
 
-**This preparation is neither publication nor submission.**
+**Code/evidence is published. The assignment is not yet submitted.**

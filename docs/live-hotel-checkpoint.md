@@ -252,3 +252,14 @@ environment passed. No dependency installation or source repair was needed.
 
 This gate authorizes the requested checkpoint operation, not a completed Canvas
 submission. Record the real assessed SHA after commit in a documentation follow-up.
+
+
+## Published Part 1 checkpoint — September 29, 2026
+
+Student-authorized checkpoint [e6687356b620798414cb249cf5bde918d461aead](https://github.com/mallorypierz/hotel_app/commit/e6687356b620798414cb249cf5bde918d461aead) contains the reviewed 96 files.
+`git push origin main` succeeded (`eb256a3..e668735`). A documentation-only
+follow-up records this real assessed code SHA in report.md. Earlier pending/no-push
+statements are historical and superseded by this entry. Six unrelated legacy
+media files remain untracked; secrets/database/runtime artifacts remain excluded.
+No new live calls or booking changes. Services were left running. Demo recording,
+instructor access, remaining report fields and Canvas submission are still pending.
