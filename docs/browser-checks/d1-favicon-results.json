@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-30T00:44:28.187Z",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "faviconRequests": [
+    "/favicon.svg"
+  ],
+  "faviconResponses": [
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    }
+  ],
+  "directGeoapifyRequests": 0,
+  "asset": {
+    "status": 200,
+    "contentType": "image/svg+xml"
+  },
+  "buildAssetCopied": true,
+  "status": "PASS"
+}

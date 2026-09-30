@@ -1,0 +1,241 @@
+{
+  "started": "2026-09-30T00:33:21.367Z",
+  "checks": [
+    {
+      "name": "Healthy services and initial discovery",
+      "mode": "live",
+      "status": "PASS",
+      "observed": "As expected"
+    },
+    {
+      "name": "Live ZIP 16802: center, API/list/marker correspondence, selection",
+      "mode": "live",
+      "status": "PASS",
+      "observed": "HTTP 200; exact US ZIP; 20 API records/list rows/markers; selection matched."
+    },
+    {
+      "name": "Live ZIP 02108: center, API/list/marker correspondence, selection",
+      "mode": "live",
+      "status": "PASS",
+      "observed": "HTTP 200; exact US ZIP; 20 API records/list rows/markers; selection matched."
+    },
+    {
+      "name": "Live narrow layout and attribution at 390 / 320 CSS pixels",
+      "mode": "live",
+      "status": "PASS",
+      "observed": "No document overflow; attribution visible at both widths."
+    },
+    {
+      "name": "Live console, HTTP, tiles and credential checks",
+      "mode": "live",
+      "status": "FAIL",
+      "observed": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Invalid input blocks provider requests",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "As expected"
+    },
+    {
+      "name": "Controlled mismatched_postcode",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 404; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Controlled non_us",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 404; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Controlled unresolved",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 404; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Controlled empty",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 200; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Controlled provider_failure",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 502; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Controlled rate_limit",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 503; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Controlled quota",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "Controller returned 503; Vue displayed matching state; no live provider call."
+    },
+    {
+      "name": "Loading, repeated submit guard, old marker clearing and stale response",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "As expected"
+    },
+    {
+      "name": "Shared ID selection with same-name hotels; Tab, Space, Enter and pointer",
+      "mode": "simulated",
+      "status": "PASS",
+      "observed": "As expected"
+    },
+    {
+      "name": "Boston sample joined rows and labels",
+      "mode": "real local sample API",
+      "status": "PASS",
+      "observed": "As expected"
+    },
+    {
+      "name": "Aspen no-results feedback",
+      "mode": "real local sample API",
+      "status": "PASS",
+      "observed": "As expected"
+    },
+    {
+      "name": "Sample booking review, creation, history, cancellation, delete confirmation and refresh",
+      "mode": "real local sample API",
+      "status": "FAIL",
+      "observed": "locator.selectOption: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Demo traveler', { exact: true })\u001b[22m\n"
+    }
+  ],
+  "live": [
+    {
+      "zip": "16802",
+      "observed": "2026-09-30T00:33:24.678Z",
+      "status": 200,
+      "center": {
+        "postcode": "16802",
+        "country_code": "us",
+        "locality": "State College",
+        "latitude": 40.803167822,
+        "longitude": -77.861384958
+      },
+      "count": 20,
+      "limitReached": true,
+      "omitted": 0,
+      "duplicates": 0
+    },
+    {
+      "zip": "02108",
+      "observed": "2026-09-30T00:33:26.368Z",
+      "status": 200,
+      "center": {
+        "postcode": "02108",
+        "country_code": "us",
+        "locality": "Boston",
+        "latitude": 42.357581412,
+        "longitude": -71.065946589
+      },
+      "count": 20,
+      "limitReached": true,
+      "omitted": 0,
+      "duplicates": 0
+    }
+  ],
+  "createdBookingIds": [],
+  "console": [
+    {
+      "phase": "live",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    },
+    {
+      "phase": "simulated",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    },
+    {
+      "phase": "simulated",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    },
+    {
+      "phase": "simulated",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    },
+    {
+      "phase": "simulated",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    },
+    {
+      "phase": "simulated",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    },
+    {
+      "phase": "simulated",
+      "type": "error",
+      "resourceError": true,
+      "credentialFlag": false
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [
+    {
+      "phase": "simulated",
+      "host": "127.0.0.1:5173",
+      "path": "/api/discovery/hotels",
+      "status": 404
+    },
+    {
+      "phase": "simulated",
+      "host": "127.0.0.1:5173",
+      "path": "/api/discovery/hotels",
+      "status": 404
+    },
+    {
+      "phase": "simulated",
+      "host": "127.0.0.1:5173",
+      "path": "/api/discovery/hotels",
+      "status": 404
+    },
+    {
+      "phase": "simulated",
+      "host": "127.0.0.1:5173",
+      "path": "/api/discovery/hotels",
+      "status": 502
+    },
+    {
+      "phase": "simulated",
+      "host": "127.0.0.1:5173",
+      "path": "/api/discovery/hotels",
+      "status": 503
+    },
+    {
+      "phase": "simulated",
+      "host": "127.0.0.1:5173",
+      "path": "/api/discovery/hotels",
+      "status": 503
+    }
+  ],
+  "credentialFlags": 0,
+  "directGeoapifyRequests": 0,
+  "tiles": {
+    "observed": 35,
+    "statuses": [
+      200
+    ],
+    "liveRefererValid": true
+  },
+  "finished": "2026-09-30T00:33:45.113Z"
+}

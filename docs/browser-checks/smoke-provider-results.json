@@ -1,0 +1,115 @@
+{
+  "mismatched_postcode": {
+    "status": 404,
+    "body": {
+      "detail": {
+        "code": "zip_unresolved",
+        "message": "The requested U.S. ZIP could not be located."
+      }
+    },
+    "headers": {},
+    "calls": {
+      "geocoding": 1,
+      "places": 0
+    }
+  },
+  "non_us": {
+    "status": 404,
+    "body": {
+      "detail": {
+        "code": "zip_unresolved",
+        "message": "The requested U.S. ZIP could not be located."
+      }
+    },
+    "headers": {},
+    "calls": {
+      "geocoding": 1,
+      "places": 0
+    }
+  },
+  "unresolved": {
+    "status": 404,
+    "body": {
+      "detail": {
+        "code": "zip_unresolved",
+        "message": "The requested U.S. ZIP could not be located."
+      }
+    },
+    "headers": {},
+    "calls": {
+      "geocoding": 1,
+      "places": 0
+    }
+  },
+  "empty": {
+    "status": 200,
+    "body": {
+      "provider": "geoapify",
+      "center": {
+        "postcode": "02108",
+        "country_code": "us",
+        "locality": "Boston",
+        "latitude": 42.36,
+        "longitude": -71.06
+      },
+      "radius_meters": 5000,
+      "hotels": [],
+      "count": 0,
+      "limit": 20,
+      "limit_reached": false,
+      "omitted_count": 0,
+      "duplicates_removed": 0
+    },
+    "headers": {},
+    "calls": {
+      "geocoding": 1,
+      "places": 1
+    }
+  },
+  "provider_failure": {
+    "status": 502,
+    "body": {
+      "detail": {
+        "code": "provider_error",
+        "message": "Hotel search could not be completed."
+      }
+    },
+    "headers": {},
+    "calls": {
+      "geocoding": 1,
+      "places": 1
+    }
+  },
+  "rate_limit": {
+    "status": 503,
+    "body": {
+      "detail": {
+        "code": "provider_limited",
+        "message": "Hotel search is temporarily limited. Try again later."
+      }
+    },
+    "headers": {
+      "retry-after": "2"
+    },
+    "calls": {
+      "geocoding": 1,
+      "places": 1
+    }
+  },
+  "quota": {
+    "status": 503,
+    "body": {
+      "detail": {
+        "code": "provider_limited",
+        "message": "Hotel search is temporarily limited. Try again later."
+      }
+    },
+    "headers": {
+      "retry-after": "2"
+    },
+    "calls": {
+      "geocoding": 1,
+      "places": 1
+    }
+  }
+}

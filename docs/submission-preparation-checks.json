@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-29 America/New_York",
+  "prior_report_sha256": "b84dd9b33f21c9d5b848bb89dbd2578338086547cca06015eb2f2dd0cfd2bdd6",
+  "archive_byte_identical_to_previous_HEAD_report": true,
+  "archive_at_same_directory_level": true,
+  "local_link_targets_checked": 145,
+  "missing_local_links": [],
+  "manifest_file_count": 96,
+  "missing_manifest_files": [],
+  "staged_paths": [],
+  "assessed_commit": "PENDING",
+  "current_HEAD_not_assessed": "eb256a3ac5cc08be4029e6e3354099c3ce903163",
+  "repository_access": "Not verified; attempted unauthenticated web fetch returned cache miss",
+  "video": "PENDING, no new recording supplied",
+  "canvas_submission": "PENDING, not performed",
+  "manual_browser_review": {
+    "Boston": "PASS: four joined rows and labels",
+    "Aspen": "PASS: No stays matched",
+    "error_warning_log": "empty"
+  }
+}

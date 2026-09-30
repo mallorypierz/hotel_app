@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-30T00:24:35.334Z",
+  "postcode": "02108",
+  "status": 200,
+  "feedback": "20 hotels returned for ZIP 02108.",
+  "count": 20,
+  "limitReached": true,
+  "omitted": 0,
+  "duplicates": 0,
+  "markers": 20,
+  "tileResponses": 6,
+  "tileStatuses": [
+    200
+  ],
+  "tileRefererValid": true,
+  "browserGeoapifyApiRequests": 0,
+  "credentialParameters": 0,
+  "uncaughtErrors": []
+}

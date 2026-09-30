@@ -1,0 +1,70 @@
+{
+  "started": "2026-09-30T00:37:43.232Z",
+  "checks": [
+    {
+      "name": "Temporary smoke booking IDs absent; existing traveler bookings preserved",
+      "status": "PASS",
+      "observed": "2 existing U006 records remain; full database baseline checked separately."
+    },
+    {
+      "name": "Actual FastAPI invalid input",
+      "status": "PASS",
+      "observed": "HTTP 422 for 2108"
+    },
+    {
+      "name": "Frontend favicon",
+      "status": "FAIL",
+      "observed": "HTTP 404 for /favicon.ico"
+    },
+    {
+      "name": "Simulated tile failure retains list/marker and honest missing-field labels",
+      "status": "PASS"
+    }
+  ],
+  "console": [
+    {
+      "type": "error",
+      "sourceHost": "127.0.0.1:5173",
+      "sourcePath": "/favicon.ico",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "type": "error",
+      "sourceHost": "tile.openstreetmap.org",
+      "sourcePath": "/12/1239/1514.png",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "sourceHost": "tile.openstreetmap.org",
+      "sourcePath": "/12/1239/1515.png",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "sourceHost": "tile.openstreetmap.org",
+      "sourcePath": "/12/1238/1514.png",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "sourceHost": "tile.openstreetmap.org",
+      "sourcePath": "/12/1240/1514.png",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "sourceHost": "tile.openstreetmap.org",
+      "sourcePath": "/12/1238/1515.png",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "type": "error",
+      "sourceHost": "tile.openstreetmap.org",
+      "sourcePath": "/12/1240/1515.png",
+      "message": "Failed to load resource: net::ERR_FAILED"
+    }
+  ],
+  "pageErrors": [],
+  "finished": "2026-09-30T00:37:44.471Z"
+}

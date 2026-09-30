@@ -1,0 +1,12 @@
+{
+  "source_files_checked": 33,
+  "source_files_changed": [],
+  "database_matches_baseline": true,
+  "table_counts": {
+    "metadata": 1,
+    "hotels": 8,
+    "trips": 12,
+    "users": 6,
+    "bookings": 6
+  }
+}

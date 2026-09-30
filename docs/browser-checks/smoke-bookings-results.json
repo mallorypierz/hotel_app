@@ -1,0 +1,29 @@
+{
+  "started": "2026-09-30T00:34:56.286Z",
+  "created": [
+    "B-ef99cb5fd11f4378bb2f9bb373c92df5",
+    "B-1e8b12bb60bd4584a720ef2293c0f1c5"
+  ],
+  "console": [
+    {
+      "type": "error",
+      "message": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "sourceHost": "127.0.0.1:5173",
+      "sourcePath": "/favicon.ico"
+    }
+  ],
+  "failedRequests": [
+    {
+      "host": "127.0.0.1:5173",
+      "path": "/api/bookings/B-1e8b12bb60bd4584a720ef2293c0f1c5",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "apiErrors": [],
+  "pageErrors": [],
+  "travelerAccessibility": "- combobox \"Demo traveler\":\n  - option \"Demo Traveler 1\" [selected]\n  - option \"Demo Traveler 2\"\n  - option \"Demo Traveler 3\"\n  - option \"Demo Traveler 4\"\n  - option \"Demo Traveler 5\"\n  - option \"Demo Traveler 6\"",
+  "status": "PASS",
+  "retainedForRestart": "B-ef99cb5fd11f4378bb2f9bb373c92df5",
+  "deleted": "B-1e8b12bb60bd4584a720ef2293c0f1c5",
+  "finished": "2026-09-30T00:35:01.431Z"
+}

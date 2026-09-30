@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "scenarios": [
+    "initial",
+    "invalid",
+    "leading zero",
+    "list Space selects marker",
+    "marker Enter/Space selects and reveals list without moving focus",
+    "selection makes no API call",
+    "390px and 320px no overflow",
+    "loading clears markers",
+    "edited ZIP rejects stale response",
+    "empty retains center",
+    "unresolved removes map",
+    "network failure",
+    "rate limit honors Retry-After",
+    "tile failure retains results",
+    "Boston four rows",
+    "Aspen no results"
+  ],
+  "uncaughtErrors": [],
+  "discoveryRequests": 7,
+  "tileReferer": "http://127.0.0.1:5173/ (verified on controlled tile requests)",
+  "providerCalls": "controlled, no live Geoapify calls"
+}

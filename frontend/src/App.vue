@@ -4,6 +4,7 @@ import { ref } from 'vue'
 import HotelTable from './components/HotelTable.vue'
 import SearchBar from './components/SearchBar.vue'
 import BookingPanel from './components/BookingPanel.vue'
+import HotelDiscovery from './components/HotelDiscovery.vue'
 
 const selectedStay = ref(null)
 
@@ -49,22 +50,26 @@ const searchHotels = async (city) => {
       href="#"
     >Wayfinder</a>
     <nav aria-label="Main navigation">
-      <a href="#search">Find a stay</a>
+      <a href="#discovery">Discover hotels</a>
+      <a href="#search">Sample stays &amp; bookings</a>
       <a href="#bookings">Booking history</a>
     </nav>
   </header>
 
   <main>
+    <HotelDiscovery />
     <section
       id="search"
       class="hero"
     >
       <div class="hero-copy">
         <p class="eyebrow">
-          Stay somewhere memorable
+          Sample stays &amp; bookings
         </p>
-        <h1>Your next favorite place is closer than you think.</h1>
-        <p>Find a hotel by name or city. Compare offered stays and plan your next getaway.</p>
+        <h2 class="sample-title">
+          Practice your next getaway.
+        </h2>
+        <p>Search classroom sample stays by hotel name or city. Prices and bookings here are simulated and separate from live discovery.</p>
       </div>
       <SearchBar @search="searchHotels" />
     </section>
@@ -98,7 +103,7 @@ const searchHotels = async (city) => {
         <div class="results-heading">
           <div>
             <p class="eyebrow">
-              Available stays
+              Sample stays
             </p>
             <h2>{{ hotels.length }} {{ hotels.length === 1 ? 'place' : 'places' }} to consider</h2>
           </div>
