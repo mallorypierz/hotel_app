@@ -5,7 +5,7 @@ import DiscoveryForm from './DiscoveryForm.vue'
 import DiscoveryList from './DiscoveryList.vue'
 import DiscoveryMap from './DiscoveryMap.vue'
 
-const { postcode, state, result, message, selectedPlaceId, retrySeconds, busy, edit, search } = useDiscovery()
+const { postcode, state, result, message, selectedPlaceId, retrySeconds, busy, edit, search, savedIds, pendingIds, storageFeedback, changeLocal, mapVersion } = useDiscovery()
 const list = ref(null)
 const map = ref(null)
 async function select(id, source) {
@@ -36,7 +36,7 @@ async function select(id, source) {
     </p>
     <DiscoveryForm
       :postcode="postcode"
-      :busy="busy"
+      :busy="busy || pendingIds.size > 0"
       :invalid="state === 'invalid'"
       :retry-seconds="retrySeconds"
       @edit="edit"
@@ -65,6 +65,9 @@ async function select(id, source) {
           Retry search
         </button>
       </template>
+      <p v-else-if="state === 'empty' && result.source === 'local'">
+        No saved hotels remain for this ZIP. Search again to check API results.
+      </p>
       <p v-else-if="state === 'empty'">
         No nearby hotels were returned for ZIP {{ result.center.postcode }}. Coverage varies; this does not mean no hotels exist.
       </p>
@@ -73,10 +76,19 @@ async function select(id, source) {
       </p>
     </div>
     <template v-if="result">
+      <p role="status">
+        {{ storageFeedback }}
+      </p>
       <div class="discovery-summary">
+        <h2>{{ result.source === 'local' ? 'Saved locally' : 'API results' }}</h2>
+        <p v-if="result.source === 'local'">
+          Only hotels saved for this ZIP are shown. This is not a complete list of hotels in the area.
+        </p>
         <h2>Returned ZIP center: {{ result.center.postcode }}<span v-if="result.center.locality"> · {{ result.center.locality }}</span> · US</h2>
         <p>{{ result.center.latitude }}, {{ result.center.longitude }} · Within 5 km of this postcode point, not the whole ZIP area or your location.</p>
-        <p>Up to {{ result.limit }} hotels per search. Coverage varies. Results are not a complete hotel inventory.<span v-if="result.limit_reached"> Additional places may exist.</span></p>
+        <p v-if="result.source !== 'local'">
+          Up to {{ result.limit }} hotels per search. Coverage varies. Results are not a complete hotel inventory.<span v-if="result.limit_reached"> Additional places may exist.</span>
+        </p>
         <p v-if="result.omitted_count || result.duplicates_removed">
           {{ result.omitted_count }} unusable records omitted · {{ result.duplicates_removed }} duplicate records removed.
         </p>
@@ -86,10 +98,16 @@ async function select(id, source) {
           v-if="result.hotels.length"
           ref="list"
           :hotels="result.hotels"
+          :saved-ids="savedIds"
+          :pending-ids="pendingIds"
+          :local="result.source === 'local'"
           :selected-place-id="selectedPlaceId"
+          @save="changeLocal($event)"
+          @remove="changeLocal($event, true)"
           @select="select($event, 'list')"
         />
         <DiscoveryMap
+          :key="mapVersion"
           ref="map"
           :result="result"
           :selected-place-id="selectedPlaceId"

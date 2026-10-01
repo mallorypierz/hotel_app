@@ -4,6 +4,8 @@ import sqlite3
 from contextlib import contextmanager
 from pathlib import Path
 
+from .migrations import add_demo_hotel_tables
+
 DATA = Path(__file__).resolve().parents[2] / 'data'
 DATABASE = DATA / 'wayfinder.sqlite3'
 
@@ -23,6 +25,7 @@ def connection(path=None):
 def initialize(path=None):
     with connection(path) as db:
         db.execute('BEGIN IMMEDIATE')
+        add_demo_hotel_tables(db)
         db.execute('CREATE TABLE IF NOT EXISTS metadata (version INTEGER PRIMARY KEY)')
         if db.execute('SELECT version FROM metadata').fetchone():
             return

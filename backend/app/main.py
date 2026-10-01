@@ -8,6 +8,7 @@ from .database import initialize
 from . import config, controller, geocoding, discovery
 from .discovery_models import HotelDiscoveryResponse
 from .provider import ProviderLimitedError
+from .local_routes import register as register_local_routes
 
 
 @asynccontextmanager
@@ -17,6 +18,7 @@ async def lifespan(app):
 
 
 app = FastAPI(title="Wayfinder Hotels API", version="0.2.0", lifespan=lifespan)
+register_local_routes(app)
 
 
 @app.get('/api/health')

@@ -321,3 +321,50 @@ log was empty. git diff --check passed. No source or dependency changes; full
 backend tests, lint, and build were not repeated for this media-only checkpoint.
 .env, local SQLite, installers, and private review artifacts remain ignored and
 untracked. Backend and frontend remain running on 8010 and 5173 as requested.
+
+## Assignment 2 Part 2 schema — October 1, 2026
+
+On `assignment2_part2_in_class`, added repeatable transactional creation of
+`saved_hotels` and `demo_hotel_nights` before the existing seed-marker check.
+Applied to local `data/wayfinder.sqlite3`; both tables are empty. API `place_id`
+maps to the exact case-sensitive `hotel_id` key; optional name/address remain
+nullable, coordinates are required and bounded. Nightly rows use a hotel/date
+composite primary key, foreign key, valid ISO date, and nonnegative integer demo
+defaults (10000 cents, 20 rooms). No save controls or endpoints added.
+
+159 backend tests passed in 0.46s. Original schemas and every supplied/current
+record match the pre-edit snapshot after repeated initialization; integrity and
+foreign-key checks pass. No frontend, frozen discovery API, or dependencies
+changed. See `docs/assignment2-part2-schema.md` for mapping and verification.
+Stopped for requested student database inspection; no commit/push. Browser/live
+API and frontend build/lint were not repeated for this schema-only step.
+
+## Assignment 2 Part 2 local operations — October 1, 2026
+
+Extended the schema checkpoint with `saved_hotel_locations` and local GET/POST/
+DELETE endpoints. Saves preserve exact provider IDs and ZIP center context;
+insert-only demo nights cover October 10–14, 2026. Transactional deletion removes
+only the selected hotel, its associations, and its nights. Vue now searches local
+storage first, falls back to the frozen discovery endpoint only on successful
+empty local reads, and provides Add/Remove controls plus labeled simulated nights.
+
+166 backend tests, frontend lint/build, isolated-database browser workflow, and
+16 adapted Part 1 browser regressions passed. Assignment 1 table schemas/records
+remain unchanged; the real local saved tables are empty. See
+`docs/assignment2-part2-local-hotels.md` for exact outcomes and manual steps.
+Project service ownership checked; original listeners exited before restart.
+Fresh services now run on 8010/5173. Temporary test server is stopped. No unrelated
+processes, dependencies, frozen discovery API logic, or sample records changed.
+No commit/push; stop for student manual browser/database verification.
+
+## Authorized Part 2 checkpoint — October 1, 2026
+
+Student requested preserving and pushing all changes. Reviewed the complete
+pending source, tests, and documentation; repeated manual Boston (four labeled
+joined rows) and Aspen (No stays matched) checks in the browser. Browser warning/
+error log empty; git diff --check passed. Prior 166-test, lint/build, isolated
+mutation-browser and Part 1 regression results remain applicable; no source edits
+since those checks. The current browser shows a saved hotel with edited demo
+values; local database records are preserved and remain Git-ignored, as do .env
+and private runtime artifacts. Publishing the Part 2 feature branch supersedes
+the historical no-commit/no-push status above. No merge to main requested.

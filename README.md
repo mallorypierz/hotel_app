@@ -17,6 +17,16 @@ FastAPI initializes SQLite on first startup, importing hotels, trips, users, and
 
 The database controller in `backend/app/controller.py` performs CRUD; `database.py` defines relational storage and `models.py` defines API models. Vue is the view; FastAPI dispatches validated requests to the controller. This demo has no authentication and must only be run locally with sample data.
 
+Assignment 2 Part 2 adds local hotel storage tables through
+`backend/app/migrations.py`: `saved_hotels`, `demo_hotel_nights`, and
+`saved_hotel_locations` for searched ZIP/location associations.
+Initialization applies the additive migration on every startup, before the
+existing seed-marker check, so both existing and fresh databases receive it
+without reseeding existing records. The database remains `data/wayfinder.sqlite3`.
+No discovery results are automatically saved. Daily rates and inventory are
+fictional classroom defaults, not Geoapify data. See
+[schema mapping and verification](docs/assignment2-part2-schema.md).
+
 Run the reusable preparation and verification stages in `prompts/start-up-prompts.md` when setting up or resuming the project.
 
 ## Setup
@@ -144,3 +154,31 @@ runtime is the default; elsewhere set `PLAYWRIGHT_RUNTIME` to an existing module
 path. No Playwright dependency was added to the app. The separate
 `discovery-live.cjs` makes one real Geoapify search and normal tile requests;
 run it deliberately, not as part of repeated automated checks.
+
+
+## Assignment 2 Part 2 local hotels
+
+ZIP search checks SQLite first. Saved matches use their stored ZIP center and
+show dated, **simulated classroom** rates and room counts; this saved subset is
+not a complete inventory. Only a successful empty local lookup falls back to
+`GET /api/discovery/hotels`. Local storage failures show an error without calling
+the provider. The Part 1 endpoint and its response contract remain unchanged.
+
+Use **Add to Local** on an API result to save its exact provider ID and current
+ZIP/location context. Existing IDs disable Add, including after refresh and
+when encountered in another ZIP. **Remove from Local** removes that hotel from
+all ZIPs, together with its demo nights, transactionally. Buttons reflect only
+confirmed saves/removals; failures provide retry guidance. Repeat a ZIP search
+after saving to see local nightly details.
+
+- `GET /api/local-hotels?postcode=02108` returns local matches, stored center,
+  nightly rows, and global saved provider IDs for button status.
+- `POST /api/local-hotels` accepts `{hotel, center}` using discovery field names;
+  `hotel.place_id` maps to `saved_hotels.hotel_id`. Creates five demo nights,
+  October 10–14, 2026 inclusive, with $100.00 and 20 rooms per night. Repeated
+  saves preserve stored rates/inventory and add only missing associations/nights.
+- `DELETE /api/local-hotels?hotel_id=...` removes the hotel, all ZIP associations,
+  and nights in one transaction. Repeating deletion succeeds harmlessly.
+
+These routes are local classroom operations, not reservations or provider pricing.
+See [Part 2 checks and manual verification](docs/assignment2-part2-local-hotels.md).
