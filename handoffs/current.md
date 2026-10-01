@@ -304,3 +304,20 @@ Report will prominently link the published video using an immutable URL.
 Before this checkpoint, reviewed the full pending diff and manually repeated
 Boston (four labeled rows) and Aspen (“No stays matched”); browser warning/error
 log empty. Application source unchanged; no new live requests or booking changes.
+
+## Remaining media checkpoint — October 1, 2026
+
+User requested committing all remaining changes and pushing to GitHub. The only
+pending artifacts were four older Part 2 screenshots and two older demo videos;
+application source was already committed. Reviewed all four screenshots and
+sampled both silent videos at two-second intervals: observed sample hotel search
+and booking UI, with no credentials or .env contents visible in reviewed frames.
+This is a sampled review, not a frame-by-frame audit. These older artifacts do
+not replace the assessed live-discovery recording.
+
+Before checkpoint, manually searched Boston (four joined rows with labeled
+columns) and Aspen ("No stays matched") in the running browser; warning/error
+log was empty. git diff --check passed. No source or dependency changes; full
+backend tests, lint, and build were not repeated for this media-only checkpoint.
+.env, local SQLite, installers, and private review artifacts remain ignored and
+untracked. Backend and frontend remain running on 8010 and 5173 as requested.
