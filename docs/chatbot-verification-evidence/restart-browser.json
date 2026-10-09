@@ -1,0 +1,15 @@
+{
+  "label": "CONTROLLED isolated-data restart and mocked no-match UI",
+  "console": [],
+  "apiErrors": [],
+  "pageErrors": [],
+  "status": "PASS",
+  "checks": [
+    "local save/edited rate persisted across both service restarts",
+    "removed hotel stays absent",
+    "no discovery request on saved ZIP",
+    "cancelled booking retained",
+    "deleted booking stays absent",
+    "no-match trace safely displayed"
+  ]
+}

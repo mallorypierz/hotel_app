@@ -182,3 +182,59 @@ after saving to see local nightly details.
 
 These routes are local classroom operations, not reservations or provider pricing.
 See [Part 2 checks and manual verification](docs/assignment2-part2-local-hotels.md).
+
+### Saved-hotel chatbot
+
+The internal `chat_controller.retrieve()` accepts a strict SQL/parameters
+proposal. `chat_models.py` defines query contracts; `chat_queries.py` opens a dedicated
+read-only SQLite connection, authorizes only approved saved-hotel columns and
+functions, and enforces query-work and result-size limits. Existing operations
+are unchanged. This boundary uses Python 3.12 SQLite configuration APIs; it was
+verified with Python 3.12.5 / SQLite 3.45.3 and requires no new package.
+See [contracts, limits and verification](docs/chatbot-retrieval-verification.md).
+
+`POST /api/chat` now accepts a question and orchestrates two OpenAI Responses
+requests around checked local retrieval. `chat_routes.py` is the thin HTTP
+adapter; `llm_provider.py` owns transport, `chat_controller.py` orchestrates,
+and `chat_stays.py` independently checks intent, records and nightly arithmetic.
+The second model returns structured recommendations; Python validates and
+renders their factual dates, costs and availability. Replies include answer,
+checked hotels, the simulated-data label and sanitized evidence. Failures never
+fall back to mock answers. The Vue assistant is available under **Ask saved hotels**,
+between discovery and sample bookings. `HotelChat.vue` owns the form/states;
+`ChatHotelCards.vue` displays checked facts and `ChatEvidence.vue` displays the
+read-only trace. `useChat.js` calls only `/api/chat`, blocks duplicate submissions,
+respects Retry-After and discards stale replies. Editing cancels the browser
+request; it may not cancel work already started on the backend/provider.
+
+Use Enter for a new line, then Tab to Send and press Enter. The simulated-data
+label stays visible in every state. Expand **How this answer was produced**
+for the question, SQL/parameters, validation, retrieved records and exact model.
+All returned text is rendered without HTML interpretation. See
+[frontend verification and controlled screenshots](docs/chatbot-frontend-verification.md).
+
+Privately add these backend settings to the existing ignored project-root `.env`:
+
+- `OPENAI_API_KEY`: your project API key; enter it privately, never in chat or frontend files.
+- `OPENAI_MODEL=gpt-4.1-mini-2025-04-14` (the only accepted model; also the default).
+- `OPENAI_TIMEOUT_SECONDS=20` and `OPENAI_MAX_OUTPUT_TOKENS=1800` (defaults).
+
+Preserve `GEOAPIFY_API_KEY`. No SDK installation is needed. Restart only this
+project's backend using the existing port 8010/TLS command after changing config.
+The API is paid; see [dated provider research and private setup](docs/chatbot-research.md).
+Real two-request success and no-match cases passed October 9; see
+[the audit](docs/chatbot-final-audit.md). To repeat after private setup, send to localhost:
+
+```sh
+curl http://127.0.0.1:8010/api/chat \
+  -H 'Content-Type: application/json' \
+  -d '{"question":"Which saved hotels in 06109 have one room from 2026-10-10 to 2026-10-12 for $350 total or less?"}'
+```
+
+This sends the question and relevant saved records to OpenAI through FastAPI;
+it does not send a key from the browser/client or change local records. Results
+depend on saved data. Specify an explicit ZIP, dates/year, room count and budget
+meaning; ambiguous requests ask for clarification. Limits include 1–14 nights,
+50 retrieved rows and 24 KiB record data. See
+[backend verification, fixture and limitations](docs/chatbot-backend-verification.md)
+and the [labeled mock trace](docs/chatbot-backend-mock-trace.json).

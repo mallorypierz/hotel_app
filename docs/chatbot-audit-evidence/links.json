@@ -1,0 +1,187 @@
+[
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-live-followup.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "report-assignment2-part1.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/part1-report-preservation.json",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "report-previous-assignment-part2.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "README.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-research.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/live-hotel-research.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-desktop-v1.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-mobile-v1.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-states-v1.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-design.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-design-changes.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/desktop.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/mobile.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/assignment2-part2-schema.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/assignment2-part2-local-hotels.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-research.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/mock-success.json",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/desktop.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/mock-no-match.json",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/no-match.png",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/mock-insufficient.json",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification-evidence/rejected-queries.json",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "data/chatbot-fixture.json",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-verification.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-demo-script.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "docs/chatbot-ai-evidence.md",
+    "exists": true
+  },
+  {
+    "document": "report.md",
+    "target": "prompts/12-chatbot-actual-evidence.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/assignment2-part2-schema.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/zip-lookup.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/live-hotel-verification.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/assignment2-part2-local-hotels.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/chatbot-retrieval-verification.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/chatbot-frontend-verification.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/chatbot-research.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/chatbot-backend-verification.md",
+    "exists": true
+  },
+  {
+    "document": "README.md",
+    "target": "docs/chatbot-backend-mock-trace.json",
+    "exists": true
+  }
+]

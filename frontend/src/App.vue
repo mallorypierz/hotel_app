@@ -5,6 +5,7 @@ import HotelTable from './components/HotelTable.vue'
 import SearchBar from './components/SearchBar.vue'
 import BookingPanel from './components/BookingPanel.vue'
 import HotelDiscovery from './components/HotelDiscovery.vue'
+import HotelChat from './components/HotelChat.vue'
 
 const selectedStay = ref(null)
 
@@ -51,6 +52,7 @@ const searchHotels = async (city) => {
     >Wayfinder</a>
     <nav aria-label="Main navigation">
       <a href="#discovery">Discover hotels</a>
+      <a href="#chatbot">Ask saved hotels</a>
       <a href="#search">Sample stays &amp; bookings</a>
       <a href="#bookings">Booking history</a>
     </nav>
@@ -58,6 +60,7 @@ const searchHotels = async (city) => {
 
   <main>
     <HotelDiscovery />
+    <HotelChat />
     <section
       id="search"
       class="hero"

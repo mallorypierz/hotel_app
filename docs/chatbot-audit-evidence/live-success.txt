@@ -1,0 +1,90 @@
+YOUR SAVED HOTELS
+
+Ask about your stay.
+
+Simulated course rates and availability—not real booking information
+
+Your question
+
+Up to 2,000 characters. Enter adds a line; Tab to Send, then press Enter. Editing cancels the current request.
+
+Your question and relevant saved hotel records are sent to OpenAI through our backend. Do not include private personal information.
+
+Send
+
+Your saved-hotel answer
+
+Comfort Inn: 2026-10-10 to 2026-10-12, 2 nights, 1 room(s), $300.00 total; at least 15 rooms on every night. Recommended because it meets your dates, room count and budget.
+Checkout is excluded. Comparisons cover only saved hotels; all amounts and availability are simulated.
+
+Matching saved hotel
+
+Comfort Inn
+Stay dates
+2026-10-10 → 2026-10-12 (checkout excluded)
+Total simulated cost
+$300.00 for 1 room(s)
+Available rooms
+15 minimum each night
+Edit question or dates
+
+Coverage is limited to saved hotels and stored nights. Missing nights are unknown. No real availability or booking is offered.
+
+How this answer was produced
+Original question
+
+Compare saved hotels in ZIP 06109 for 1 room from 2026-10-10 to 2026-10-12 under $350 total for the stay.
+
+Provider / model
+
+OpenAI / gpt-4.1-mini-2025-04-14
+
+Proposed SQL (read-only evidence)
+SELECT h.hotel_id, h.name, n.stay_date, n.nightly_rate_cents, n.rooms_available
+FROM saved_hotels h
+LEFT JOIN demo_hotel_nights n ON n.hotel_id=h.hotel_id AND n.stay_date>=? AND n.stay_date<?
+WHERE EXISTS (SELECT 1 FROM saved_hotel_locations l WHERE l.hotel_id=h.hotel_id AND l.postcode=?)
+ORDER BY h.hotel_id, n.stay_date
+Bound parameters
+[
+  "2026-10-10",
+  "2026-10-12",
+  "06109"
+]
+Validation outcome
+
+Passed read-only validation and record verification
+
+Retrieved records
+
+2 rows returned; maximum 50 rows / 24576 bytes.
+
+Complete: yes. Truncated: no.
+
+All locally saved hotels associated with requested ZIP and stay dates
+
+hotel_id
+51aad8171cd02952c059f0b3ff5c97d74440f00102f901e6a2ac3c0000000092030b436f6d666f727420496e6e
+name
+Comfort Inn
+stay_date
+2026-10-10
+nightly_rate_cents
+20000
+rooms_available
+15
+hotel_id
+51aad8171cd02952c059f0b3ff5c97d74440f00102f901e6a2ac3c0000000092030b436f6d666f727420496e6e
+name
+Comfort Inn
+stay_date
+2026-10-11
+nightly_rate_cents
+10000
+rooms_available
+20
+Model request stages
+hotel_query: completed
+hotel_answer: completed
+
+SQL is evidence only. It cannot be edited or executed here.

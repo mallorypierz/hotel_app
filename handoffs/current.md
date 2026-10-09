@@ -368,3 +368,255 @@ since those checks. The current browser shows a saved hotel with edited demo
 values; local database records are preserved and remain Git-ignored, as do .env
 and private runtime artifacts. Publishing the Part 2 feature branch supersedes
 the historical no-commit/no-push status above. No merge to main requested.
+
+## Chatbot planning audit — October 8, 2026
+
+Latest task: planning only for revised Assignment 2 Part 2. Read project rules,
+README, prior handoff/storage documentation, supplied October 1 revised brief,
+and actual storage/routes/models/Vue implementation. Created
+`docs/chatbot-plan.md` with the actual three-table schema, MVC/file boundaries,
+full-credit acceptance checks and seven implementation stages. No chatbot code
+or dependency change; existing Part 1 and local-storage behavior preserved.
+
+Audited clean branch `assignment2_part2_in_class` at
+`3a31777445071e51159e965c98e0ac41da6f0f88`. Direct read-only SQLite inspection
+found one saved Comfort Inn in ZIP 06109, one location and five demo nights
+(October 10–14): October 10 is edited to 20000 cents/15 rooms; remaining nights
+are 10000 cents/20 rooms. Preserve those edits. Sample tables contain 8 hotels,
+12 trips, 6 users, 6 bookings and one seed marker. Integrity is ok, no foreign-key
+violations; database hash unchanged during inspection. Earlier empty-table notes
+are historical. No LLM route/provider/query validator/chat view currently exists.
+
+Fresh baseline: 166 backend tests passed in 0.70s; frontend lint/build passed
+(26 modules, 288 ms); pip check passed; all eight installed direct frontend
+versions match lockfile. Python 3.12.5/SQLite 3.45.3, Node 24.20.0/npm 11.19.0.
+Existing python-dotenv is unpinned (installed 1.2.3); no SDK or parser installed.
+No packages added. `.env` and SQLite remain ignored/untracked; no secrets shown.
+
+Next: select one permitted provider, research exact model/API/limits and class
+configuration if choosing Nemotron, then create an early chatbot mockup and
+settle contracts before implementation. Research/mockup, safe SQL retrieval,
+two model calls, Vue answer/evidence display, live verification and revised
+report/recording remain outstanding. No fresh browser, provider, restart or
+instructor-access checks in this audit; no services changed or commit/push.
+The historical entries above remain preserved.
+
+## OpenAI chatbot research — October 8, 2026
+
+Student selected OpenAI API as the sole provider. Added
+`docs/chatbot-research.md` with dated official documentation and selected exact
+model `gpt-4.1-mini-2025-04-14` for both Responses API requests. The model catalog
+lists structured outputs and paid access (no free tier); standard rates observed
+were $0.40/$0.10/$1.60 per million input/cached-input/output tokens. Account model
+access, billing, limits and live calls remain unverified. Do not substitute models
+or providers silently. Linked the decision from `docs/chatbot-plan.md`.
+
+Research specifies schema-only first-request context, limited retrieved records
+in the second request, strict output contracts plus independent SQL validation,
+store:false with honest retention limits, safe timeout/rate/quota handling,
+and private backend-only OPENAI_API_KEY/OPENAI_MODEL configuration instructions.
+These settings and behavior are proposed, not implemented. Reuse existing
+urllib/json/sqlite3/Pydantic/dotenv; no dependency change needed for this design.
+
+Only documentation changed; no credentials read/requested, model requests,
+database writes, application edits, service changes or commit/push. Official
+sources were opened; inaccessible create-reference/Markdown URLs were replaced
+by accessible official HTML guidance and the CLI create reference. Prior code
+checks were not rerun for documentation. Next: early chatbot mockup and final
+API/SQL contracts, then the read-only executor and two-request backend.
+
+## Early chatbot mockup — October 8, 2026
+
+Created original pre-implementation `docs/chatbot-desktop-v1.png`,
+`docs/chatbot-mobile-v1.png`, and `docs/chatbot-states-v1.png`, explained in
+`docs/chatbot-design.md`. Fits the assistant between existing discovery and
+sample bookings; shows question/Send, answer cards, all requested feedback
+states, persistent simulated-data labeling, keyboard/mobile requirements and
+read-only expandable evidence. Fictional examples are labeled; no model call
+or database query produced them. Provider/model follows the research decision.
+
+Preserve v1; future revisions belong in `docs/chatbot-design-changes.md` and new
+versioned images. Documentation renderer uses existing bundled Pillow and
+refuses to overwrite original outputs. Images visually reviewed; draft glyph
+and evidence-consistency corrections made before finalizing. No app code,
+dependencies, real data or services changed. Runtime accessibility, responsive
+behavior and chatbot functionality remain untested. Next: finalize API/SQL
+contracts, then implement the restricted read-only retrieval boundary.
+
+## Read-only chatbot retrieval AutoLoop — October 8, 2026
+
+Implemented `chat_models.py` (strict SQL-plus-positional-parameters contracts),
+`chat_queries.py` (native authorization/read-only executor), and internal
+`chat_controller.py`. No public SQL route, LLM integration or Vue change.
+Fresh URI mode=ro connections enforce query_only, disabled extension loading,
+default-deny table/column/function authorizer, EXPLAIN preflight before original
+execution, single statements, and independent work/row/byte limits. Only approved
+columns of the three saved-hotel tables are accessible; sample tables excluded.
+No dependencies or existing controllers/routes/migrations changed.
+
+Initial new suite: 85 passed / 5 failed. One correction addressed this SQLite
+build's omitted database name on empty-column table-count authorization events;
+ordinary column reads still require main. New suite then 90 passed in 0.65s;
+full backend suite 256 passed in 1.08s. Isolated fixtures compare all schemas,
+every table's contents and database hashes after each test; malicious proposals,
+work/results limits and layered write denials passed. Real database hash remains
+e7d83319033ee45c131fd8a9722ca492a1bc65638aa4b4b01d23ef4a29952c16.
+
+See `docs/chatbot-retrieval-verification.md` for exact contracts, expected/observed
+checks, correction evidence and limitations. README records the new internal
+architecture. Bounds: 50 rows, 24 KiB serialized record payload, about 100,000 VM
+steps and cooperative 0.5-second deadline. No partial records on failure.
+Semantic correctness/grounding remains future controller work, not guaranteed
+by safe SQL. Runtime requires Python 3.12 SQLite config APIs; no hard process
+sandbox claimed. No browser, frontend lint/build, live provider, restart or
+recording checks; no services changed or commit/push. Next: intent validation,
+two-request provider/controller orchestration, then thin chat route and Vue UI.
+
+## Two-request chatbot backend AutoLoop — October 8, 2026
+
+Implemented POST /api/chat with validated question input and a 16 KiB chat-only
+body cap. Thin chat_routes dispatches to chat_controller; llm_provider owns
+backend-only OpenAI Responses transport. Contracts/prompts and independent stay
+checks are separate. Model remains gpt-4.1-mini-2025-04-14 for both calls; no
+dependency addition, retry loop, alternate model/provider or mock fallback.
+
+First call proposes raw-night SQL plus bound parameters and explicit intent;
+the tested read-only executor executes it, then a trusted local read verifies
+record provenance/completeness. Python checks every night, checkout exclusion,
+room counts, actual integer-cent sums, room multiplication and nightly versus
+total budgets. Second call gets original question, retrieved records and checked
+facts; it selects structured recommendations/reasons. Backend rejects ungrounded
+selections and renders factual answer text. Safe failures retain bounded evidence
+and stage details; no booking/database mutations. Clarifications precede SQL.
+
+Final backend suite: 341 passed in 1.37s. One test correction moved an injected
+fixture name before the byte-preservation snapshot; earlier 82-pass/1-teardown
+error and all expected/observed checks are recorded in
+docs/chatbot-backend-verification.md. Labeled fixture is data/chatbot-fixture.json;
+docs/chatbot-backend-mock-trace.json shows both mocked calls and actual isolated
+SQL retrieval/answer. It is not live evidence. Real database SHA256 unchanged:
+e7d83319033ee45c131fd8a9722ca492a1bc65638aa4b4b01d23ef4a29952c16.
+
+OPENAI_API_KEY configured boolean was false. No key printed/read into output,
+no model network calls and no live access/schema/latency verification. README
+documents private root .env setup and a localhost request. Explicit ZIP/dates/
+year/rooms and supported dollar budget wording are required by the conservative
+intent guard. Time/work limits are cooperative, not a hard process sandbox.
+No frontend edits/tests/browser checks, service restart, commit or push.
+Next: privately configure the key and verify a small real two-call workflow,
+then connect Vue to this backend and produce demonstration/report evidence.
+
+## Chatbot Vue AutoLoop — October 8, 2026
+
+Implemented the approved layout between discovery and sample bookings using
+HotelChat, ChatHotelCards, ChatEvidence and useChat. Only /api/chat is called;
+provider credentials, SQL generation/validation and arithmetic stay backend.
+Question/loading/answer/clarification/no-match/insufficient/failure states,
+persistent simulated label, bounded requests, cooldown, duplicate/stale guards,
+literal text rendering and expandable SQL/records/model evidence are implemented.
+Cards distinguish eligible matches from unavailable/incomplete candidates;
+recommendation reasons come from the backend answer. Original mockups preserved.
+
+Verification: 341 backend tests passed in 1.48s; lint clean; build 33 modules in
+201ms. Controlled browser checks passed keyboard/focus, all states, injection,
+50-second deadline, stale cancellation, evidence and mobile 390/320px. Existing
+isolated local-hotels regression passed including save/remove, local-first,
+map/list selection and Boston/Aspen. Isolated booking create/cancel/delete/refresh
+passed (one aborted browser DELETE event after successful 204; deletion verified).
+Initial native-disabled focus loss was corrected with aria-disabled plus guard;
+formatting warnings fixed. See docs/chatbot-frontend-verification.md and dated
+mockup changes; v2 screenshots clearly label mocked responses.
+
+No new dependencies, real database changes, live provider calls, commit or push.
+Real DB SHA256 remains e7d83319033ee45c131fd8a9722ca492a1bc65638aa4b4b01d23ef4a29952c16.
+Only isolated test services were started and then stopped. All prior uncommitted
+backend/research work retained. Next: privately configure/verify real OpenAI
+access, exercise a real complete two-call workflow, then update assignment
+report/recording and verify instructor access. Browser cancellation cannot
+promise cancellation of already-started provider work. Screen-reader speech,
+other browsers and real account latency/limits remain unverified.
+
+## Revised Part 2 submission evidence — October 8, 2026
+
+Preserved prior report.md byte-for-byte as report-assignment2-part1.md at the
+same directory level, retaining original links and anchor behavior. SHA256 and
+link inventory saved in docs/chatbot-verification-evidence/part1-report-preservation.json.
+Revised report.md includes setup/access/commit status, research/original mockups,
+MVC/storage/two-call workflow, readable controlled query/records/answer trace,
+expected/observed checks, fixed-fixture instructions and honest missing items.
+Added docs/chatbot-demo-script.md, docs/chatbot-ai-evidence.md and selected actual
+excerpts in prompts/12-chatbot-actual-evidence.md. Exact current coding snapshot
+is unknown; historical Part 1 student-confirmed model is not applied to this run.
+
+Fresh rejection script uses only a new temporary fixed-fixture database: write,
+Assignment 1 read and multiple statements all query_rejected; all schemas/rows
+and SHA256 unchanged after every attempt. Application code, student records,
+original mockups and Part 1 archive unchanged. No live call, video, source change,
+commit/push or fresh remote/instructor access check. Prior verification: 341 tests,
+lint/build/browser/restart passed; no configured OpenAI key. Missing live success/
+negative-case trace, video URL, assessed chatbot commit and instructor access are
+explicit blockers to final submission, not replaced with mock evidence.
+
+## Live OpenAI recovery — October 8, 2026
+
+Student privately added the OpenAI key, authorized restart, then purchased API
+credits and retained OpenAI. Live request reached the model but invalid WHERE/
+JOIN ordering was safely rejected. A focused prompt example corrected ordering;
+next response needlessly asked for complete room/date information. Clarified word
+room counts and ISO dates. Third attempt returned HTTP 200 answer through both
+real calls: actual saved Comfort Inn, Oct 10–12, one room, $300 total, minimum
+15 simulated rooms. Source change limited to chat_prompts.py; no guards relaxed.
+See docs/chatbot-live-followup.md and sanitized response JSON. Real DB hash
+unchanged. Backend/frontend left running. Live negative-case/video/assessed
+commit/access remain pending; earlier absent-key/no-live-success notes historical.
+
+## Natural date clarification fix — October 9, 2026
+
+Inspected actual browser question “Are there 2 rooms available for October 11th
+to 12th 2026 in zip code 06109?” Parser lacked ordinal/shared-month support;
+clarification returned before SQL and evidence misleadingly said no proposal.
+Added narrowly scoped explicit month/year expansion and ordinal suffix support,
+eight backend regression cases, and clarification-aware evidence wording.
+349 backend tests pass in 1.83s; lint/build pass (33 modules/213ms).
+Resubmitted exact question in real browser: both OpenAI stages completed; visible
+SQL/records validated; Comfort Inn one night × $100 × two rooms = $200, 20 rooms
+available. Saved live JPEG and visible UI text in chatbot-verification-evidence.
+No mocks used for that browser call. No dependencies/database changes. Services
+left running; original date question and expanded evidence left visible.
+
+## Remove visible recommendation IDs — October 9, 2026
+
+Student requested removing long provider codes from saved-hotel answers. Removed
+IDs from render_answer prose and ChatHotelCards display; internal keys and raw
+expandable evidence retain IDs for matching/verification. 57 chat tests pass in
+0.63s; lint/build pass (33 modules/196ms). Re-rendered saved response facts locally:
+Comfort Inn and $300 remain, provider ID absent. No live call, dependency or data
+change. Vite HMR disabled: refresh and resubmit to replace the already displayed
+old answer with the new presentation. Services left running.
+
+## Full-credit audit — October 9, 2026
+
+See docs/chatbot-final-audit.md for benchmark-by-benchmark VERIFIED/FAILED/UNVERIFIED
+matrix, fresh commands, live traces, preservation proof and student actions.
+349 backend tests passed (1.67s), frontend lint/build passed (33 modules/215ms),
+pip/npm dependency checks passed; manifests and lockfiles unchanged. Manual
+Boston returned four joined rows and Aspen showed no results in existing browser.
+Fresh real OpenAI UI success: ZIP06109 Oct10–12 one room under $350 => Comfort Inn
+$200+$100=$300, minimum15 rooms. Same request under $1 => honest no-match. Both
+stages completed on both requests; SQL, params, records, validation and model
+captured in docs/chatbot-audit-evidence live text/JPEG files. No visible answer IDs.
+Fixed JSON scripts rerun on new isolated databases: success/no-match/insufficient
+all expected, two mocked transport bodies each; rejected write/Assignment1 read/
+multiple statements leave all schemas/rows/hash unchanged. Student DB byte hash
+unchanged throughout audit (d8ef4ef671355aff0be4894a3ce1880e877a6cd408e6e5289548324dcd5a2c5b).
+Part1 report byte-preserved, original mockup hashes valid; 37 local report/archive/
+README targets resolve. Configured-secret/key-pattern scans found no candidate
+matches; .env/SQLite/captures/build ignored. Browser warn/error log empty.
+
+Submission NOT complete: report/README/demo-script have stale no-key/live-pending
+claims requiring reconciliation; real live negative evidence gap is now closed.
+Video URL and assessed chatbot commit missing; instructor access/course submission
+unverified. HEAD remains storage checkpoint 3a31777445071e51159e965c98e0ac41da6f0f88.
+No application code/dependency changes or commit/push/recording/submission. Existing
+services left running. Prior isolated storage/discovery/booking/restart browser
+proof reused; no mutations to student's saved data. Deadline compliance not inferred.

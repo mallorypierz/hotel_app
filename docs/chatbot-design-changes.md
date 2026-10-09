@@ -1,0 +1,15 @@
+# Chatbot design change log
+
+The [original design](chatbot-design.md) and three v1 PNGs are pre-implementation
+evidence. Preserve them. Add future dated revisions or implementation deviations
+here, linking new images and explaining the reason and verification.
+
+| Date | Version | Change and status |
+| --- | --- | --- |
+| October 8, 2026 | Original v1 | Desktop/mobile layouts and feedback board finalized before implementation. Read-only evidence expanded on desktop, collapsed on mobile; simulated-data label in every state. No implementation deviations yet. |
+| October 8, 2026 | Backend contract | Retrieve raw nightly rows (not the mockup's aggregate query) and independently verify them before calculating totals. The second model selects structured hotel recommendations and factual reasons; backend renders checked dates/costs/rooms rather than trusting unrestricted numeric prose. Mockup PNGs preserved. See backend verification for mocked evidence and pending live checks. |
+| October 8, 2026 | Vue v2 | Implemented the cream/green desktop columns and stacked mobile layout between discovery and sample bookings, with a navigation link. Original v1 image checksums verified unchanged. New [desktop](chatbot-ui-desktop-v2.png) and [mobile](chatbot-ui-mobile-v2.png) screenshots are prominently labeled mocked verification. |
+| October 8, 2026 | Accessible submission | Send uses aria-disabled plus a composable guard so it remains keyboard-focusable during loading; native disabled caused focus loss in the first browser check. Enter inserts a newline; Tab/Enter submits. Editing clears evidence and invalidates pending browser replies. Browser cancellation does not guarantee provider work or charges stop. |
+| October 8, 2026 | Answer/evidence details | Recommendation reasons appear in backend-rendered answer text. Cards show all checked candidates, explicitly distinguishing eligible matches, unavailable hotels and missing nights; eligibility does not mean the model recommended every card. This is longer than the two-card sketch. ISO dates avoid locale/timezone ambiguity. Evidence is collapsed initially at all sizes, with vertically stacked record fields on mobile; expanded evidence is long but does not overflow horizontally. |
+| October 8, 2026 | Honest failure evidence | Validation failure text covers rejection, limits and subsequent record verification failure. It does not claim SQL was never executed when the backend has safely retrieved records and then rejected their semantics. Missing configuration, cooldown and a 50-second browser deadline show safe failure feedback, with no mock fallback. |
+| October 9, 2026 | Readable hotel answers | Student requested removing long provider codes from saved-hotel answers. Removed parenthesized IDs from backend answer prose and the Hotel ID line from recommendation cards. Internal IDs and expandable raw evidence remain available for record matching/audit. Existing 57 chat tests, lint and build pass; saved-response rendering confirms the hotel name/total without its ID. No new provider call or data change. |

@@ -1,0 +1,10 @@
+{
+  "label": "SIMULATED COURSE TEST FIXTURE — not live hotels, rates or availability",
+  "postcode": "06109",
+  "hotels": [
+    {"hotel_id":"demo-birch","name":"Example Birch House","postcodes":["06109","06108"],"nights":[["2026-10-10",12000,3],["2026-10-11",14000,2],["2026-10-12",99000,0]]},
+    {"hotel_id":"demo-river","name":"Example River Inn","postcodes":["06109"],"nights":[["2026-10-10",14000,5],["2026-10-11",16000,5]]},
+    {"hotel_id":"demo-full","name":"Example Unavailable","postcodes":["06109"],"nights":[["2026-10-10",10000,0],["2026-10-11",10000,5]]},
+    {"hotel_id":"demo-gap","name":"Example Missing Night","postcodes":["06109"],"nights":[["2026-10-10",9000,9]]}
+  ]
+}

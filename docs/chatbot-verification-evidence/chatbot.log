@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "Keyboard newline/Tab/Enter, focus retained, grounded cards, expandable SQL/records/model",
+    "Loading, duplicate guard, edit cancellation, stale response ignored, next request succeeds",
+    "Clarification, no matches, insufficient data, persistent simulated label",
+    "Failure, cooldown retained across edits, malformed response",
+    "50-second browser deadline with controlled clock",
+    "Model, hotel name and SQL HTML payloads rendered as text",
+    "390px and 320px layouts including expanded evidence have no page overflow",
+    "Actual FastAPI missing-configuration failure (test server key deliberately empty)",
+    "Actual sample Boston four rows and Aspen no-results",
+    "No browser provider requests or JavaScript errors"
+  ]
+}

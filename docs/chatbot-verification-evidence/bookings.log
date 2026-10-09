@@ -1,0 +1,22 @@
+{
+  "started": "2026-10-08T14:53:37.651Z",
+  "created": [
+    "B-fa97ec445e7342d5ba3f4e49a9ecf029",
+    "B-66f85294922d40e38393d9785aa92031"
+  ],
+  "console": [],
+  "failedRequests": [
+    {
+      "host": "127.0.0.1:5173",
+      "path": "/api/bookings/B-66f85294922d40e38393d9785aa92031",
+      "failure": "net::ERR_ABORTED"
+    }
+  ],
+  "apiErrors": [],
+  "pageErrors": [],
+  "travelerAccessibility": "- combobox \"Demo traveler\":\n  - option \"Demo Traveler 1\" [selected]\n  - option \"Demo Traveler 2\"\n  - option \"Demo Traveler 3\"\n  - option \"Demo Traveler 4\"\n  - option \"Demo Traveler 5\"\n  - option \"Demo Traveler 6\"",
+  "status": "PASS",
+  "retainedForRestart": "B-fa97ec445e7342d5ba3f4e49a9ecf029",
+  "deleted": "B-66f85294922d40e38393d9785aa92031",
+  "finished": "2026-10-08T14:53:41.264Z"
+}

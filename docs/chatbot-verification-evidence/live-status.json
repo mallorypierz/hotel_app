@@ -1,0 +1,42 @@
+{
+  "label": "Live verification INCOMPLETE; no provider request made",
+  "credential_configured": false,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "saved_records_read_only": [
+    {
+      "name": "Comfort Inn",
+      "postcode": "06109",
+      "stay_date": "2026-10-10",
+      "nightly_rate_cents": 20000,
+      "rooms_available": 15
+    },
+    {
+      "name": "Comfort Inn",
+      "postcode": "06109",
+      "stay_date": "2026-10-11",
+      "nightly_rate_cents": 10000,
+      "rooms_available": 20
+    },
+    {
+      "name": "Comfort Inn",
+      "postcode": "06109",
+      "stay_date": "2026-10-12",
+      "nightly_rate_cents": 10000,
+      "rooms_available": 20
+    },
+    {
+      "name": "Comfort Inn",
+      "postcode": "06109",
+      "stay_date": "2026-10-13",
+      "nightly_rate_cents": 10000,
+      "rooms_available": 20
+    },
+    {
+      "name": "Comfort Inn",
+      "postcode": "06109",
+      "stay_date": "2026-10-14",
+      "nightly_rate_cents": 10000,
+      "rooms_available": 20
+    }
+  ]
+}

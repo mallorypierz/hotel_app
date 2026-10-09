@@ -1,0 +1,11 @@
+SAMPLE STAYS
+
+4 places to consider
+
+Scroll the table sideways on smaller screens to see all columns and select a stay.
+
+HOTEL	CITY	STATE	NIGHTLY RATE	TRIP	CHECK IN	CHECK OUT	BOOK A STAY
+Harbor Lantern Hotel	Boston	MA	$150	Boston Harbor Weekend	2026-09-18	2026-09-20	Select stay
+Maple Square Inn	Boston	MA	$120	Boston City Break	2026-09-18	2026-09-21	Select stay
+Harbor Lantern Hotel	Boston	MA	$150	Boston Autumn Weekend	2026-10-02	2026-10-04	Select stay
+Maple Square Inn	Boston	MA	$120	Boston October Break	2026-10-09	2026-10-12	Select stay

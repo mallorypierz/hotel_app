@@ -1,0 +1,19 @@
+import json,hashlib
+from pathlib import Path
+from backend.app import database
+from backend.tests.test_local_hotels import LocalClient
+from backend.tests.test_chat_queries import snapshot
+path=Path(json.loads(Path('.capture/chatbot-verification/runtime.json').read_text())['database'])
+database.DATABASE=path
+c=LocalClient()
+body={'hotel':{'place_id':'verification-persist','name':'CONTROLLED restart fixture','latitude':41,'longitude':-72},'center':{'postcode':'06107','country_code':'us','locality':'Example locality','latitude':41,'longitude':-72}}
+assert c.post('/api/local-hotels',json=body).status_code==200
+with database.connection(path) as db: db.execute("UPDATE demo_hotel_nights SET nightly_rate_cents=12345 WHERE hotel_id='verification-persist' AND stay_date='2026-10-10'")
+a=snapshot(path)
+assert c.post('/api/local-hotels',json=body).status_code==200
+assert snapshot(path)==a
+body['hotel']['place_id']='verification-remove'
+assert c.post('/api/local-hotels',json=body).status_code==200
+assert c.delete('/api/local-hotels?hotel_id=verification-remove').status_code==204
+Path('.capture/chatbot-verification/pre-restart.json').write_text(json.dumps({'snapshot':snapshot(path),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}))
+print('PASS duplicate save preserves all rows and edited nightly value; separate hotel removed; restart snapshot saved')

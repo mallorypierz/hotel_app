@@ -1,0 +1,23 @@
+{
+  "console": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "apiErrors": [
+    {
+      "path": "/api/discovery/hotels",
+      "status": 404
+    },
+    {
+      "path": "/api/discovery/hotels",
+      "status": 503
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "label": "CONTROLLED fixed-fixture rejection check \u2014 no live model call; new temporary database only",
+  "date": "2026-10-08",
+  "fixture": "data/chatbot-fixture.json",
+  "cases": [
+    {
+      "proposal": {
+        "sql": "DELETE FROM saved_hotels",
+        "parameters": []
+      },
+      "expected": "query_rejected",
+      "observed": "query_rejected",
+      "all_table_contents_and_schemas_unchanged": true,
+      "before_sha256": "adcf5df8fb843d4931e6cc3f8e78b425643aecbc4efcde037eb34182f6f51041",
+      "after_sha256": "adcf5df8fb843d4931e6cc3f8e78b425643aecbc4efcde037eb34182f6f51041"
+    },
+    {
+      "proposal": {
+        "sql": "SELECT booking_id FROM bookings",
+        "parameters": []
+      },
+      "expected": "query_rejected",
+      "observed": "query_rejected",
+      "all_table_contents_and_schemas_unchanged": true,
+      "before_sha256": "adcf5df8fb843d4931e6cc3f8e78b425643aecbc4efcde037eb34182f6f51041",
+      "after_sha256": "adcf5df8fb843d4931e6cc3f8e78b425643aecbc4efcde037eb34182f6f51041"
+    },
+    {
+      "proposal": {
+        "sql": "SELECT name FROM saved_hotels; DELETE FROM saved_hotels",
+        "parameters": []
+      },
+      "expected": "query_rejected",
+      "observed": "query_rejected",
+      "all_table_contents_and_schemas_unchanged": true,
+      "before_sha256": "adcf5df8fb843d4931e6cc3f8e78b425643aecbc4efcde037eb34182f6f51041",
+      "after_sha256": "adcf5df8fb843d4931e6cc3f8e78b425643aecbc4efcde037eb34182f6f51041"
+    }
+  ]
+}

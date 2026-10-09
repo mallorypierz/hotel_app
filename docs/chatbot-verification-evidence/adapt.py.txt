@@ -1,0 +1,17 @@
+from pathlib import Path
+out='docs/chatbot-verification-evidence/'
+for name in ['chatbot','local-hotels','discovery','smoke-bookings']:
+ s=Path('docs/browser-checks/'+name+'.cjs').read_text()
+ for old,new in {'docs/browser-checks/chatbot-results.json':out+'chatbot-browser.json','docs/chatbot-ui-desktop-v2.png':out+'desktop.png','docs/chatbot-ui-mobile-v2.png':out+'mobile.png','docs/browser-checks/discovery-results.json':out+'discovery-browser.json','docs/live-hotel-ui-controlled-desktop.png':out+'discovery-desktop.png','docs/live-hotel-ui-controlled-mobile.png':out+'discovery-mobile.png','docs/live-hotel-ui-tile-failure.png':out+'discovery-tile-failure.png','docs/browser-checks/smoke-bookings-results.json':out+'booking-browser.json','docs/smoke-booking-created.png':out+'booking-created.png','docs/smoke-booking-refreshed.png':out+'booking-refreshed.png'}.items(): s=s.replace(old,new)
+ if name=='discovery':
+  s=s.replace(" await page.goto("," await page.route('**/api/local-hotels**', r => r.fulfill({json:{hotels:[], saved_hotel_ids:[], center:null}}));\n await page.goto(",1)
+  s=s.replace('.hotel-list button', '.hotel-list button[aria-pressed]')
+ # Capture console and HTTP failures separately; controlled error scenarios are expected.
+ marker=" const page = await browser.newPage" if name=='chatbot' else " const page=await browser.newPage"
+ if name!='smoke-bookings':
+  # Attach on first goto after page exists; route controls are already set up.
+  s=s.replace("await page.goto(","""const diagnostic={console:[],apiErrors:[]};
+  page.on('console',m=>{if(['error','warning'].includes(m.type()))diagnostic.console.push(m.text().replace(/https?:\\/\\/\\S+/g,'[URL]').slice(0,300));});
+  page.on('response',r=>{const u=new URL(r.url());if(u.pathname.startsWith('/api/')&&r.status()>=400)diagnostic.apiErrors.push({path:u.pathname,status:r.status()});});
+  process.on('exit',()=>require('node:fs').writeFileSync('"""+out+name+"-diagnostics.json',JSON.stringify(diagnostic,null,2)));\n  await page.goto(",1)
+ Path('.capture/chatbot-verification/'+name+'.cjs').write_text(s)
