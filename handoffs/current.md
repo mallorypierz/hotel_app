@@ -620,3 +620,21 @@ unverified. HEAD remains storage checkpoint 3a31777445071e51159e965c98e0ac41da6f
 No application code/dependency changes or commit/push/recording/submission. Existing
 services left running. Prior isolated storage/discovery/booking/restart browser
 proof reused; no mutations to student's saved data. Deadline compliance not inferred.
+
+## Authorized checkpoint and blocked push — October 9, 2026
+
+Student authorized commit/push when functional/evidence checks pass except video.
+Reconciled report/README/demo script with actual live success/no-match and fresh
+349-test verification. Existing repo publicly readable via unauthenticated GitHub
+API (200, private=false); remote branch still storage SHA before push. Prior
+manual Boston/Aspen checks remain applicable; no application changes since audit.
+Created application/evidence checkpoint 6bce3f406c675175f14dfe3e7e9b69520104d00b.
+Configured-key and key-pattern publication scan passed. No dependencies, secrets
+or local database committed. git diff --cached --check noted only trailing blank
+lines in two preserved raw lint logs; no source whitespace findings.
+`git push origin assignment2_part2_in_class` FAILED: invalid username/token,
+password authentication unsupported. No publication occurred. GitHub CLI absent.
+Student must restore Git authentication privately; never paste a token in chat.
+After authentication, push this branch (including documentation follow-up), verify
+remote SHA/artifact access, record video and submit. No recording or submission
+performed. Local assessed code SHA in report, publication explicitly blocked.

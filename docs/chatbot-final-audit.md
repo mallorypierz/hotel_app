@@ -1,5 +1,13 @@
 # Revised Assignment 2 Part 2 audit — October 9, 2026
 
+**Checkpoint follow-up:** The student subsequently authorized commit/push. Current
+report/README/demo script now include the actual live results. Application/evidence
+checkpoint `6bce3f406c675175f14dfe3e7e9b69520104d00b` was committed locally. The
+existing GitHub repository is publicly readable (unauthenticated API HTTP 200,
+private=false), but push failed with invalid Git credentials; new artifacts are
+not published. Video and submission remain missing. The matrix below records
+the pre-checkpoint audit; its report/commit gaps are resolved locally only.
+
 **Implementation verified within the checks below; submission is not complete.** This audits the supplied October 1 revised brief. VERIFIED means observed code/tests/evidence support the benchmark, not a guarantee of a grade. FAILED means a required item is currently absent or inconsistent. UNVERIFIED means evidence is unavailable. No source changes, dependencies, commits, pushes, recordings or submissions were made during this audit.
 
 ## Benchmark matrix
