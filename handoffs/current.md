@@ -661,3 +661,13 @@ Report's user-cleared video field filled; current missing-video claims updated.
 Full audiovisual rubric/privacy review not performed; no claim of full coverage.
 Original Desktop video unchanged; application/SQLite untouched. Course submission
 not performed. Assessed application commit remains 6bce3f4; documentation only.
+
+## Replacement recording — October 9, 2026
+
+Student requested replacing the public demo with their 2:11:16 PM recording.
+Replaced the existing release asset at the same download URL; original Desktop
+files unchanged. New file: 32,206,866 bytes, duration 54.935 seconds, SHA256
+5dc37d2317125dc8dc3898aceb6fa57206c746c4973c8fe266917821a7f3f663.
+Public GitHub API asset size/digest match; unauthenticated download HTTP 200.
+Updated report, demo guide, audit follow-up and publication metadata. Full video
+content/rubric coverage not reviewed; course submission not performed.

@@ -20,7 +20,7 @@ The [earlier assignment report](report-previous-assignment-part2.md) is also unc
 | Working branch | `assignment2_part2_in_class` |
 | Preserved storage checkpoint | `3a31777445071e51159e965c98e0ac41da6f0f88` — preserved local-storage foundation |
 | Assessed Part 2 chatbot commit | [`6bce3f406c675175f14dfe3e7e9b69520104d00b`](https://github.com/mallorypierz/hotel_app/commit/6bce3f406c675175f14dfe3e7e9b69520104d00b) — published verified application/evidence checkpoint; subsequent commits update documentation only. |
-| Part 2 demo video URL | [Download the recorded demonstration (MOV, 2:56)](https://github.com/mallorypierz/hotel_app/releases/download/assignment2-part2-demo-2026-10-09/assignment2-part2-demo-2026-10-09.mov) · [Release page](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09) |
+| Part 2 demo video URL | [Download the recorded demonstration (MOV, 0:55)](https://github.com/mallorypierz/hotel_app/releases/download/assignment2-part2-demo-2026-10-09/assignment2-part2-demo-2026-10-09.mov) · [Release page](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09) |
 | Live OpenAI success/no-match evidence | **VERIFIED October 9 — real success and no-match, both model stages completed** |
 | Repository/artifact access | Public repository; chatbot checkpoint pushed October 9 after authentication was restored. Unauthenticated report and live-evidence requests returned HTTP 200. |
 | Access method | Public repository and published artifacts; no access request needed for checked report/live evidence. Instructor-device/network conditions not tested. |
@@ -289,7 +289,7 @@ are historical, not the latest verification.
 
 [Demo script](docs/chatbot-demo-script.md) distinguishes real calls from controlled
 rejection evidence. The student supplied the October 9 recording linked above
-(duration 176.06 seconds; 89,540,788 bytes). Public download returned HTTP 200
+(replacement recorded at 2:11 PM; duration 54.935 seconds; 32,206,866 bytes). Public download returned HTTP 200
 without authentication; GitHub asset SHA256 matches the original. Publication
 verifies access, not full audiovisual rubric coverage; that review was not performed.
 See [recording publication evidence](docs/chatbot-video-publication.json).

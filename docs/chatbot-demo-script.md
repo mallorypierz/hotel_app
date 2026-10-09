@@ -2,7 +2,7 @@
 
 Prepared October 8, 2026. This is the planned demonstration guide. The student
 subsequently supplied a [recording, published October 9](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09)
-(2 minutes 56 seconds). Publication/access verified; full correspondence with
+(replacement recording: approximately 55 seconds). Publication/access verified; full correspondence with
 this script has not been reviewed. The steps below remain the original guide.
 
 ## Prepare privately, before recording

@@ -2,7 +2,7 @@
 
 **Recording follow-up:** Student-supplied [video](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09) published with explicit
 public-sharing approval. Unauthenticated download HTTP 200 and matching SHA256
-verified. Duration 176.06 seconds. This resolves the missing video-link item;
+verified. Replacement duration 54.935 seconds (student requested replacing the earlier recording). This resolves the missing video-link item;
 full recorded rubric coverage has not been reviewed. Course submission remains
 pending. The audit matrix below preserves the earlier audit state.
 
