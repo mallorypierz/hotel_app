@@ -638,3 +638,14 @@ Student must restore Git authentication privately; never paste a token in chat.
 After authentication, push this branch (including documentation follow-up), verify
 remote SHA/artifact access, record video and submit. No recording or submission
 performed. Local assessed code SHA in report, publication explicitly blocked.
+
+## GitHub authentication restored and checkpoint published — October 9, 2026
+
+GitHub CLI now authenticated as mallorypierz using keyring. Network-enabled auth
+check passed; initial sandbox-only auth check was inconclusive due restricted access.
+Authorized push succeeded on assignment2_part2_in_class, remote SHA confirmed
+4876b52f9505b728ec5c8cf9813063818df05dcd. Unauthenticated raw report and live-success
+evidence requests at that commit both returned HTTP 200. Updated report/audit to
+remove current publication-blocked claims. Application assessed SHA remains
+6bce3f406c675175f14dfe3e7e9b69520104d00b; later commits documentation only.
+Video recording and course submission still pending; no application/data changes.

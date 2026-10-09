@@ -3,7 +3,7 @@
 **Revised October 1 brief · updated October 9, 2026.**
 The complete two-request OpenAI workflow is verified with actual saved hotels,
 including successful and no-match browser cases. **The Part 2 video recording
-and course submission remain incomplete. Publication is also blocked by invalid GitHub Git credentials.** Controlled and live evidence are
+and course submission remain incomplete. The assessed code and evidence are now published on the project branch.** Controlled and live evidence are
 labeled separately. See the [full benchmark audit](docs/chatbot-final-audit.md).
 
 The original [Assignment 2 Part 1 report](report-assignment2-part1.md) is preserved
@@ -18,11 +18,11 @@ The [earlier assignment report](report-previous-assignment-part2.md) is also unc
 | Repository | [mallorypierz/hotel_app](https://github.com/mallorypierz/hotel_app) |
 | Working branch | `assignment2_part2_in_class` |
 | Current HEAD | `3a31777445071e51159e965c98e0ac41da6f0f88` — preserved local-storage foundation |
-| Assessed Part 2 chatbot commit | `6bce3f406c675175f14dfe3e7e9b69520104d00b` — verified application/evidence checkpoint, local only; push rejected because GitHub credentials are invalid. |
+| Assessed Part 2 chatbot commit | [`6bce3f406c675175f14dfe3e7e9b69520104d00b`](https://github.com/mallorypierz/hotel_app/commit/6bce3f406c675175f14dfe3e7e9b69520104d00b) — published verified application/evidence checkpoint; subsequent commits update documentation only. |
 | Part 2 demo video URL | **MISSING — script prepared; no new recording supplied or created** |
 | Live OpenAI success/no-match evidence | **VERIFIED October 9 — real success and no-match, both model stages completed** |
-| Repository/artifact access | Existing repository public (unauthenticated HTTP 200, private=false, October 9). New chatbot artifacts are NOT published: push authentication failed. |
-| Access method | Existing repository public; new assessed artifacts unavailable remotely until push succeeds. Instructor-device/network conditions not tested. |
+| Repository/artifact access | Public repository; chatbot checkpoint pushed October 9 after authentication was restored. Unauthenticated report and live-evidence requests returned HTTP 200. |
+| Access method | Public repository and published artifacts; no access request needed for checked report/live evidence. Instructor-device/network conditions not tested. |
 | Canvas submission | **NOT PERFORMED** |
 
 Local relative links work in this checkout and will work in a published repository
