@@ -1,8 +1,9 @@
 # Revised Part 2 demonstration script
 
-Prepared October 8, 2026. **Script only; not a completed recording. Video URL:
-MISSING. Live success and no-match were verified October 9; see the final audit.** Do not narrate planned results
-as observed results. Keep the persistent simulated-data label visible throughout.
+Prepared October 8, 2026. This is the planned demonstration guide. The student
+subsequently supplied a [recording, published October 9](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09)
+(2 minutes 56 seconds). Publication/access verified; full correspondence with
+this script has not been reviewed. The steps below remain the original guide.
 
 ## Prepare privately, before recording
 

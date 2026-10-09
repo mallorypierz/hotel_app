@@ -649,3 +649,15 @@ evidence requests at that commit both returned HTTP 200. Updated report/audit to
 remove current publication-blocked claims. Application assessed SHA remains
 6bce3f406c675175f14dfe3e7e9b69520104d00b; later commits documentation only.
 Video recording and course submission still pending; no application/data changes.
+
+## Student recording published — October 9, 2026
+
+Student provided MOV and explicitly approved public GitHub sharing following an
+automatic review block pending public-destination consent. Uploaded unchanged as
+a release asset (not a large Git blob): https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09
+Duration 176.06 seconds; 89,540,788 bytes. Unauthenticated download HTTP 200;
+GitHub SHA256 matches original 37b2499de207c8f19da5e62a9dca8f1eb14ce9ee35ecd5ce5807ddce63f80edb.
+Report's user-cleared video field filled; current missing-video claims updated.
+Full audiovisual rubric/privacy review not performed; no claim of full coverage.
+Original Desktop video unchanged; application/SQLite untouched. Course submission
+not performed. Assessed application commit remains 6bce3f4; documentation only.

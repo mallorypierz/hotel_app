@@ -2,8 +2,9 @@
 
 **Revised October 1 brief · updated October 9, 2026.**
 The complete two-request OpenAI workflow is verified with actual saved hotels,
-including successful and no-match browser cases. **The Part 2 video recording
-and course submission remain incomplete. The assessed code and evidence are now published on the project branch.** Controlled and live evidence are
+including successful and no-match browser cases. The student-supplied Part 2
+recording is now publicly downloadable. **Course submission remains incomplete.**
+The assessed code and evidence are published on the project branch. Controlled and live evidence are
 labeled separately. See the [full benchmark audit](docs/chatbot-final-audit.md).
 
 The original [Assignment 2 Part 1 report](report-assignment2-part1.md) is preserved
@@ -17,9 +18,9 @@ The [earlier assignment report](report-previous-assignment-part2.md) is also unc
 | --- | --- |
 | Repository | [mallorypierz/hotel_app](https://github.com/mallorypierz/hotel_app) |
 | Working branch | `assignment2_part2_in_class` |
-| Current HEAD | `3a31777445071e51159e965c98e0ac41da6f0f88` — preserved local-storage foundation |
+| Preserved storage checkpoint | `3a31777445071e51159e965c98e0ac41da6f0f88` — preserved local-storage foundation |
 | Assessed Part 2 chatbot commit | [`6bce3f406c675175f14dfe3e7e9b69520104d00b`](https://github.com/mallorypierz/hotel_app/commit/6bce3f406c675175f14dfe3e7e9b69520104d00b) — published verified application/evidence checkpoint; subsequent commits update documentation only. |
-| Part 2 demo video URL | **MISSING — script prepared; no new recording supplied or created** |
+| Part 2 demo video URL | [Download the recorded demonstration (MOV, 2:56)](https://github.com/mallorypierz/hotel_app/releases/download/assignment2-part2-demo-2026-10-09/assignment2-part2-demo-2026-10-09.mov) · [Release page](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09) |
 | Live OpenAI success/no-match evidence | **VERIFIED October 9 — real success and no-match, both model stages completed** |
 | Repository/artifact access | Public repository; chatbot checkpoint pushed October 9 after authentication was restored. Unauthenticated report and live-evidence requests returned HTTP 200. |
 | Access method | Public repository and published artifacts; no access request needed for checked report/live evidence. Instructor-device/network conditions not tested. |
@@ -287,7 +288,12 @@ remained byte-identical throughout the audit. Earlier October 8 results above
 are historical, not the latest verification.
 
 [Demo script](docs/chatbot-demo-script.md) distinguishes real calls from controlled
-rejection evidence. No new video URL exists. Current limitations include Chrome
+rejection evidence. The student supplied the October 9 recording linked above
+(duration 176.06 seconds; 89,540,788 bytes). Public download returned HTTP 200
+without authentication; GitHub asset SHA256 matches the original. Publication
+verifies access, not full audiovisual rubric coverage; that review was not performed.
+See [recording publication evidence](docs/chatbot-video-publication.json).
+Current limitations include Chrome
 only, no screen-reader speech check, no production load or future quota guarantee, no instructor-device/network check, and conservative explicit
 ZIP/year/dates/rooms/budget parsing. Cooperative query deadlines are not a hard
 process sandbox; browser cancellation may not stop already-started provider work.

@@ -1,5 +1,11 @@
 # Revised Assignment 2 Part 2 audit — October 9, 2026
 
+**Recording follow-up:** Student-supplied [video](https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09) published with explicit
+public-sharing approval. Unauthenticated download HTTP 200 and matching SHA256
+verified. Duration 176.06 seconds. This resolves the missing video-link item;
+full recorded rubric coverage has not been reviewed. Course submission remains
+pending. The audit matrix below preserves the earlier audit state.
+
 **Checkpoint follow-up:** The student subsequently authorized commit/push. Current
 report/README/demo script now include the actual live results. Application/evidence
 checkpoint `6bce3f406c675175f14dfe3e7e9b69520104d00b` was committed locally. The

@@ -1,0 +1,13 @@
+{
+  "recording_date": "2026-10-09",
+  "bytes": 89540788,
+  "sha256": "37b2499de207c8f19da5e62a9dca8f1eb14ce9ee35ecd5ce5807ddce63f80edb",
+  "duration_seconds": 176.06,
+  "review_scope": "File metadata and published access; full audiovisual rubric/privacy review not performed.",
+  "public_download_url": "https://github.com/mallorypierz/hotel_app/releases/download/assignment2-part2-demo-2026-10-09/assignment2-part2-demo-2026-10-09.mov",
+  "release_url": "https://github.com/mallorypierz/hotel_app/releases/tag/assignment2-part2-demo-2026-10-09",
+  "public_download_http_status": 200,
+  "github_asset_sha256_matches": true,
+  "public_sharing_explicitly_authorized": true,
+  "assessed_application_commit": "6bce3f406c675175f14dfe3e7e9b69520104d00b"
+}
